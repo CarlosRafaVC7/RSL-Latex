@@ -1,0 +1,385 @@
+@article{Asselborn2020,
+   abstract = {This paper proposes new ways to assess handwriting, a critical skill in any child’s school journey. Traditionally, a pen and paper test called the BHK test (Concise Evaluation Scale for Children’s Handwriting) is used to assess children’s handwriting in French-speaking countries. Any child with a BHK score above a certain threshold is diagnosed as ‘dysgraphic’, meaning that they are then eligible for financial coverage for therapeutic support. We previously developed a version of the BHK for tablet computers which provides rich data on the dynamics of writing (acceleration, pressure, and so forth). The underlying model was trained on dysgraphic and non-dysgraphic children. In this contribution, we deviate from the original BHK for three reasons. First, in this instance, we are interested not in a binary output but rather a scale of handwriting difficulties, from the lightest cases to the most severe. Therefore, we wish to compute how far a child’s score is from the average score of children of the same age and gender. Second, our model analyses dynamic features that are not accessible on paper; hence, the BHK is useful in this instance. Using the PCA (Principal Component Analysis) reduced the set of 53 handwriting features to three dimensions that are independent of the BHK. Nonetheless, we double-checked that, when clustering our data set along any of these three axes, we accurately detected dysgraphic children. Third, dysgraphia is an umbrella concept that embraces a broad variety of handwriting difficulties. Two children with the same global score can have totally different types of handwriting difficulties. For instance, one child could apply uneven pen pressure while another one could have trouble controlling their writing speed. Our new test not only provides a global score, but it also includes four specific score for kinematics, pressure, pen tilt and static features (letter shape). Replacing a global score with a more detailed profile enables the selection of remediation games that are very specific to each profile.},
+   author = {Thibault Asselborn and Mateo Chapatte and Pierre Dillenbourg},
+   doi = {10.1038/s41598-020-60011-8},
+   issn = {20452322},
+   issue = {1},
+   journal = {Scientific Reports},
+   month = {12},
+   pmid = {32081940},
+   publisher = {Nature Research},
+   title = {Extending the Spectrum of Dysgraphia: A Data Driven Strategy to Estimate Handwriting Quality},
+   volume = {10},
+   year = {2020}
+}
+@article{Fallah2025,
+   abstract = {Dysgraphia, a neurodevelopmental disorder impacting writing abilities, is often overlooked or misdiagnosed, affecting academic and daily life activities. It affects both children, especially school-aged, and adults, potentially stemming from brain trauma or neurological diseases. Early diagnosis is crucial for effective management and intervention. With advancements in artificial intelligence (AI), there is potential to improve early diagnosis and intervention through automated detection methods. This scoping review aims to explore available studies employing AI-based models for dysgraphia diagnosis and identify the highest performance models and their challenges to suggest future improvements. Comprehensive searches were conducted across PubMed, Scopus, Web of Science, IEEE Xplore, and SpringerLink until April 2024. Included studies are original research articles focusing on dysgraphia detection using AI-based predictive models with image processing techniques on handwritten images. Data extraction was done using a structured form in Google Sheets, capturing study characteristics, datasets, methods, and results. Out of 177 initial papers, 21 met the inclusion criteria. Studies span nearly a decade, with 38% being conference papers and 62% journal articles from various countries. AI models, particularly Convolutional Neural Networks (CNNs) and Support Vector Machines (SVMs), demonstrated high accuracy rates, often surpassing 90%, with comprehensive feature extraction methods enhancing performance. Significant challenges include small sample sizes and language-specific models. AI-based models, especially advanced ones like CNNs and SVMs, significantly enhance dysgraphia diagnosis, offering faster and more accurate assessments than traditional methods. Future research should focus on larger, more diverse datasets, language-independent models, and standardized evaluation metrics. Integrating AI-based tools in educational and healthcare settings can revolutionize dysgraphia management, improving academic outcomes and support for affected individuals.},
+   author = {Avisa Fallah and Yazdan ZandiyeVakili and Hedieh Sajedi},
+   doi = {10.1371/journal.pone.0328722},
+   issn = {19326203},
+   issue = {12 December},
+   journal = {PLOS ONE},
+   month = {12},
+   pmid = {41474692},
+   publisher = {Public Library of Science},
+   title = {AI-driven approaches for dysgraphia diagnosis using online and offline handwriting data: A comprehensive scoping review},
+   volume = {20},
+   year = {2025}
+}
+@article{Asselborn2018,
+   abstract = {The academic and behavioral progress of children is associated with the timely development of reading and writing skills. Dysgraphia, characterized as a handwriting learning disability, is usually associated with dyslexia, developmental coordination disorder (dyspraxia), or attention deficit disorder, which are all neuro-developmental disorders. Dysgraphia can seriously impair children in their everyday life and require therapeutic care. Early detection of handwriting difficulties is, therefore, of great importance in pediatrics. Since the beginning of the 20th century, numerous handwriting scales have been developed to assess the quality of handwriting. However, these tests usually involve an expert investigating visually sentences written by a subject on paper, and, therefore, they are subjective, expensive, and scale poorly. Moreover, they ignore potentially important characteristics of motor control such as writing dynamics, pen pressure, or pen tilt. However, with the increasing availability of digital tablets, features to measure these ignored characteristics are now potentially available at scale and very low cost. In this work, we developed a diagnostic tool requiring only a commodity tablet. To this end, we modeled data of 298 children, including 56 with dysgraphia. Children performed the BHK test on a digital tablet covered with a sheet of paper. We extracted 53 handwriting features describing various aspects of handwriting, and used the Random Forest classifier to diagnose dysgraphia. Our method achieved 96.6% sensibility and 99.2% specificity. Given the intra-rater and inter-rater levels of agreement in the BHK test, our technique has comparable accuracy for experts and can be deployed directly as a diagnostics tool.},
+   author = {Thibault Asselborn and Thomas Gargot and Łukasz Kidziński and Wafa Johal and David Cohen and Caroline Jolly and Pierre Dillenbourg},
+   doi = {10.1038/s41746-018-0049-x},
+   issn = {23986352},
+   issue = {1},
+   journal = {npj Digital Medicine},
+   month = {12},
+   publisher = {Nature Publishing Group},
+   title = {Automated human-level diagnosis of dysgraphia using a consumer tablet},
+   volume = {1},
+   year = {2018}
+}
+@article{Villegas-Cubas2026,
+   abstract = {Handwriting is a fundamental fine motor skill in early childhood development, yet between 10% and 30% of school-age children experience significant difficulties in its acquisition. Existing automated assessment approaches predominantly classify whether the correct character was produced, rather than evaluating the morphological quality of the stroke itself—the level at which handwriting difficulties are believed to manifest. This article addresses this gap by presenting the design, implementation, and technical evaluation of an interactive social robot shaped like a capybara, developed to support Spanish-language handwriting learning in preschool children through stroke-level, rather than character-level, assessment. The system integrates a Raspberry Pi 5, a 15.6-inch touchscreen, and a stroke morphological comparison algorithm implemented with the Open Source Computer Vision Library. The evaluation engine performs preprocessing, region-of-interest masking, and pixel-level coverage analysis based on the standard recall formulation, translated into 1-to-5-star multimodal feedback. A controlled technical evaluation of 360 trials, conducted by four trained adult evaluators, yielded an overall recognition rate of 82.78% (95% CI: 78.54–86.33%) and a mean response time of 0.68 s, well below the threshold identified in the literature as critical for sustaining engagement in preschool children. Recognition was statistically equivalent across character categories (p = 0.547) but differed markedly across stroke-quality levels (p < 0.001), evidencing the formative sensitivity of the algorithm. Exploratory observations in two Peruvian preschools indicated operational stability and children’s spontaneous engagement with the system. These results position the prototype as a technically validated, replicable foundation—based on general-purpose embedded hardware—for future pedagogically oriented research on child–robot interaction in handwriting instruction.},
+   author = {Juan E. Villegas-Cubas and Luis Otake and Oscar E. Capuñay-Uceda and Carlos Y. Valdera-Chiscol and Sttefany N. Santamaría-Oblitas and Carlos D. Jara-Huaman},
+   doi = {10.3390/info17080782},
+   issn = {20782489},
+   issue = {8},
+   journal = {Information (Switzerland)},
+   keywords = {computer vision,early childhood education,educational robotics,embedded artificial intelligence,formative assessment,handwriting recognition,human–robot interaction},
+   month = {8},
+   publisher = {Multidisciplinary Digital Publishing Institute (MDPI)},
+   title = {Interactive Social Robot for Handwriting Learning in Early Childhood Education: Technical Evaluation via Computer Vision},
+   volume = {17},
+   year = {2026}
+}
+@article{Kunhoth2024,
+   abstract = {Learning disabilities, which primarily interfere with basic learning skills such as reading, writing, and math, are known to affect around 10% of children in the world. The poor motor skills and motor coordination as part of the neurodevelopmental disorder can become a causative factor for the difficulty in learning to write (dysgraphia), hindering the academic track of an individual. The signs and symptoms of dysgraphia include but are not limited to irregular handwriting, improper handling of writing medium, slow or labored writing, unusual hand position, etc. The widely accepted assessment criterion for all types of learning disabilities including dysgraphia has traditionally relied on examinations conducted by medical expert. However, in recent years, artificial intelligence has been employed to develop diagnostic systems for learning disabilities, utilizing diverse modalities of data, including handwriting analysis. This work presents a review of the existing automated dysgraphia diagnosis systems for children in the literature. The main focus of the work is to review artificial intelligence-based systems for dysgraphia diagnosis in children. This work discusses the data collection method, important handwriting features, and machine learning algorithms employed in the literature for the diagnosis of dysgraphia. Apart from that, this article discusses some of the non-artificial intelligence-based automated systems. Furthermore, this article discusses the drawbacks of existing systems and proposes a novel framework for dysgraphia diagnosis and assistance evaluation.},
+   author = {Jayakanth Kunhoth and Somaya Al-Maadeed and Suchithra Kunhoth and Younes Akbari and Moutaz Saleh},
+   doi = {10.1007/s10032-024-00464-z},
+   issn = {14332825},
+   issue = {4},
+   journal = {International Journal on Document Analysis and Recognition},
+   keywords = {Automated systems,Dysgraphia diagnosis,Handwriting disability,Machine learning},
+   month = {12},
+   pages = {707-735},
+   publisher = {Springer Science and Business Media Deutschland GmbH},
+   title = {Automated systems for diagnosis of dysgraphia in children: a survey and novel framework},
+   volume = {27},
+   year = {2024}
+}
+@article{Downing2023,
+   abstract = {Recent research suggests that handwriting comprises two separate subskills: legibility and fluency. It remains unclear, however, how these subskills differ in their relationship to other abilities associated with handwriting, including spelling, graphomotor, and selective attention skills. In this study, we sought to examine the extent and nature of concurrent relationships that may exist among these skills. Children in Year 3 (n = 293), Year 4 (n = 291), and Year 5 (n = 283) completed a large, group-administered battery to assess each of the above skills. Using multigroup structural equation modeling, we found that spelling, graphomotor, and selective attention skills together explained a moderate amount of variance in handwriting legibility (R2 = .37–.42) and fluency (R2 = .41–.58) and that these subskills differed in their concurrent relations. Graphomotor skills accounted for a relatively greater proportion of variance in legibility than did spelling. Conversely, there were relatively stronger contributions from variations in spelling ability to variations in fluency than from graphomotor skills. Furthermore, selective attention predicted handwriting fluency only, and it partially mediated the influence of graphomotor skills. This study further demonstrates that handwriting legibility and fluency are separable and complex skills, each differentially related to spelling, graphomotor, and attentional abilities even during later primary school years.},
+   author = {Cameron Downing and Markéta Caravolas},
+   doi = {10.1016/j.jecp.2023.105756},
+   issn = {10960457},
+   journal = {Journal of Experimental Child Psychology},
+   keywords = {Graphomotor skills,Handwriting,Spelling,Writing development},
+   month = {12},
+   pmid = {37544070},
+   publisher = {Academic Press Inc.},
+   title = {Handwriting legibility and fluency and their patterns of concurrent relations with spelling, graphomotor, and selective attention skills},
+   volume = {236},
+   year = {2023}
+}
+@article{Truxius2024,
+   abstract = {Fluent and automatized handwriting frees cognitive resources for more complex elements of writing (i.e., spelling or text generation) or even math tasks (i.e., operating) and is therefore a central objective in primary school years. Most previous research has focused on the development of handwriting automaticity across the school years and characteristics of handwriting difficulties in advanced writers. However, the relative and absolute predictive power of the different kinematic aspects for typically developing beginning handwriting remains unclear. The purpose of the present study was to investigate whether and to what extent different kinematic aspects contribute to handwriting proficiency in typically developing beginning handwriters. Further, we investigated whether gender, socioeconomic background, or interindividual differences in executive functions and visuomotor integration contribute to children’s acquisition of handwriting. Therefore, 853 first-grade children aged seven copied words on a digitized tablet and completed cognitive performance tasks. We used a confirmatory factor analysis to investigate how predefined kinematic aspects of handwriting, specifically the number of inversions in velocity (NIV), pen stops, pen lifts, and pressure on the paper, are linked to an underlying handwriting factor. NIV, pen stops, and pen lifts showed the highest factor loadings and therefore appear to best explain handwriting proficiency in beginning writers. Handwriting proficiency was superior in girls than boys but, surprisingly, did not differ between children from low versus high socioeconomic backgrounds. Handwriting proficiency was related to working memory but unrelated to inhibition, shifting, and visuomotor integration. Overall, these findings highlight the importance of considering different kinematic aspects in children who have not yet automatized pen movements. Results are also important from an applied perspective, as the early detection of handwriting difficulties has not yet received much research attention, although it is the base for tailoring early interventions for children at risk for handwriting difficulties.},
+   author = {Lidia Truxius and Michelle N. Maurer and Judith Sägesser Wyss and Claudia M. Roebers},
+   doi = {10.1371/journal.pone.0296096},
+   issn = {19326203},
+   issue = {1 January},
+   journal = {PLoS ONE},
+   month = {1},
+   pmid = {38181022},
+   publisher = {Public Library of Science},
+   title = {The internal structure of handwriting proficiency in beginning writers},
+   volume = {19},
+   year = {2024}
+}
+@article{Sparaci2025,
+   abstract = {A growing number of primary school students experience difficulties with grapho-motor skills involved in handwriting, which impact both form and content of their texts. Therefore, it is important to assess and monitor handwriting skills in primary school via standardized tests and detect specific grapho-motor parameters (GMPs) which impact handwriting legibility. Multiple standardized tools are available to assess grapho-motor skills in primary school, yet little is known on between-test agreement, on impact of specific GMPs on children’s overall performance and on which GMPs may be specifically hard to tackle for children that are starting to consolidate their handwriting skills. These data would be extremely relevant for clinicians, therapists and educators, who have to choose among different assessment tools as well as design tailored intervention strategies to reach adequate performance on different GMPs in cases of poor handwriting. To gain better understanding of currently available standardized tools, we compared overall performance of 39 Italian primary school children (19 second graders and 20 third graders) experiencing difficulties with handwriting on three standardized tests for grapho-motor skills assessment and explored the impact of individual GMPs on child performance. Results showed some agreement between tests considering all children in our sample, but no agreement in second grade and only limited agreement in third grade. Data also allowed highlighting significant correlations between some GMP scores and children’s overall performance in our sample. Finally, children in our sample appeared to experience specific difficulties with some GMPs, such as letter joins and alignment.},
+   author = {Laura Sparaci and Valentina Fantasia and Chiara Bonsignori and Cecilia Provenzale and Domenico Formica and Fabrizio Taffoni},
+   doi = {10.1007/s11145-024-10562-3},
+   issn = {15730905},
+   issue = {5},
+   journal = {Reading and Writing},
+   keywords = {Children,Cursive handwriting,Dysgraphia,Grapho-motor parameters,Grapho-motor skills,Primary school},
+   month = {5},
+   pages = {1409-1434},
+   publisher = {Springer Science and Business Media B.V.},
+   title = {Handwriting in primary school: comparing standardized tests and evaluating impact of grapho-motor parameters},
+   volume = {38},
+   year = {2025}
+}
+@article{Inoue2025,
+   abstract = {Online language and literacy assessments have become prevalent in research and practice across settings. However, a notable exception is the assessment of handwriting and spelling, which has traditionally been conducted in person with paper and pencil. In light of this, we developed an automated, browser-based handwriting test application (Online Assessment of Handwriting and Spelling:OAHaS) for Japanese Kanji (Study 1) and examined its psychometric properties (Study 2). The automated scoring function using convolutional neural network (CNN) models achieved high recall (98.7%) and specificity (84.4%), as well as high agreement with manual scoring (95.4%). Additionally, behavioral validation with data from primary school children (N = 261, 49.0% female, age range = 6–12 years) indicated the high reliability and validity of our online test application, with a strong correlation between children’s scores on the online and paper-based tests (r =.86). Moreover, our analysis indicated the potential utility of writing fluency measures (latency and duration) that are automatically recorded by OAHaS. Taken together, our browser-based application demonstrated the feasibility and viability of remote and automated assessment of handwriting skills, providing a streamlined approach to research and practice on handwriting. The source code of the application and supporting materials are available on Open Science Framework (https://osf.io/gver2/).},
+   author = {Tomohiro Inoue and Yucan Chen and Toshio Ohyanagi},
+   doi = {10.3758/s13428-024-02562-6},
+   issn = {15543528},
+   issue = {1},
+   journal = {Behavior Research Methods},
+   keywords = {Automated online assessment,Convolutional neural network,Handwriting,Japanese Kanji},
+   month = {1},
+   pmid = {39738808},
+   publisher = {Springer},
+   title = {Assessing handwriting skills in a web browser: Development and validation of an automated online test in Japanese Kanji},
+   volume = {57},
+   year = {2025}
+}
+@misc{Khatib2022,
+   abstract = {Visuomotor integration (VMI) is the ability to coordinate visual perception and motor functioning. Measures of VMI are commonly used to assess children's readiness for academic learning. Attention and investments towards VMI development are mainly focused on early learners, but some empirical research indicates sustained relations between VMI and academic achievement through middle and high school. To determine the relations between VMI and academic achievement, as well as moderating factors, we conducted a multilevel meta-analysis using a total of 96 articles and 266 effect sizes published over the past 60 years. The pooled effect size revealed moderate correlations between VMI and mathematical (r = 0.39) and reading (r = 0.34) achievement. Educational stage, disability, and intelligence were significant moderators of the relation between VMI and mathematics achievement, whereas educational stage and subdomains of reading skills were significant moderators of the relation between VMI and reading achievement. Implications and future research directions are discussed.},
+   author = {Lora Khatib and Yaoran Li and David Geary and Vitaliy Popov},
+   doi = {10.1016/j.edurev.2021.100412},
+   issn = {1747938X},
+   journal = {Educational Research Review},
+   keywords = {Academic achievement,Mathematics,Meta-analysis,Reading,Visuomotor integration},
+   month = {2},
+   publisher = {Elsevier Ltd},
+   title = {Meta-analysis on the relation between visuomotor integration and academic achievement: Role of educational stage and disability},
+   volume = {35},
+   year = {2022}
+}
+@article{Lomurno2023,
+   abstract = {Dysgraphia is a neurodevelopmental disorder specific to handwriting. Classical diagnosis is based on the evaluation of speed and quality of the final handwritten text: it is therefore delayed as it is conducted only when handwriting is mastered, in addition to being highly language-dependent and not always easily accessible. This work presents a solution able to anticipate dysgraphia screening when handwriting has not been learned yet, in order to prevent negative consequences on the individuals’ academic and daily life. To quantitatively measure handwriting-related characteristics and monitor their evolution over time, we leveraged the Play-Draw-Write iPad application to collect data produced by children from the last year of kindergarten through the second year of elementary school. We developed a meta-model based on deep learning techniques (ensemble techniques and Quasi-SVM) which receives as input raw signals collected after a processing phase based on dimensionality reduction techniques (autoencoder and Time2Vec) and mathematical tools for high-level feature extraction (Procrustes Analysis). The final dysgraphia classifier can identify “at-risk” children with 84.62% Accuracy and 100% Precision more than two years earlier than current diagnostic techniques.},
+   author = {Eugenio Lomurno and Linda Greta Dui and Madhurii Gatto and Matteo Bollettino and Matteo Matteucci and Simona Ferrante},
+   doi = {10.3390/life13030598},
+   issn = {20751729},
+   issue = {3},
+   journal = {Life},
+   keywords = {deep learning,dysgraphia,early screening,longitudinal monitoring,procrustes analysis,time series embedding},
+   month = {3},
+   publisher = {MDPI},
+   title = {Deep Learning and Procrustes Analysis for Early Dysgraphia Risk Detection with a Tablet Application},
+   volume = {13},
+   year = {2023}
+}
+@article{Villegas-Ch2023,
+   abstract = {Using camera-based algorithms to detect abnormal patterns in children’s handwriting has become a promising tool in education and occupational therapy. This study analyzes the performance of a camera- and tablet-based handwriting verification algorithm to detect abnormal patterns in handwriting samples processed from 71 students of different grades. The study results revealed that the algorithm saw abnormal patterns in 20% of the handwriting samples processed, which included practices such as delayed typing speed, excessive pen pressure, irregular slant, and lack of word spacing. In addition, it was observed that the detection accuracy of the algorithm was 95% when comparing the camera data with the abnormal patterns detected, which indicates a high reliability in the results obtained. The highlight of the study was the feedback provided to children and teachers on the camera data and any abnormal patterns detected. This can significantly impact students’ awareness and improvement of writing skills by providing real-time feedback on their writing and allowing them to adjust to correct detected abnormal patterns.},
+   author = {William Villegas-Ch and Isabel Urbina-Camacho and Joselin García-Ortiz},
+   doi = {10.3390/informatics10020052},
+   issn = {22279709},
+   issue = {2},
+   journal = {Informatics},
+   keywords = {children,detection of abnormal patterns,simulation,writing},
+   month = {6},
+   publisher = {MDPI},
+   title = {Detection of Abnormal Patterns in Children’s Handwriting by Using an Artificial-Intelligence-Based Method},
+   volume = {10},
+   year = {2023}
+}
+@article{Philip2023,
+   abstract = {Importance: Handwriting and the fine motor control (hand and fingers) underlying it are key indicators of numerous motor disorders, especially among children. However, current assessment methods are expensive, slow, and subjective, leading to a lack of knowledge about the relationship between handwriting and motor control. Objective: To develop and validate the iPad precision drawing app Standardized Tracing Evaluation and Grapheme Assessment (STEGA) to enable rapid quantitative assessment of fine motor control and handwriting. Design: Cross-sectional, single-arm observational study. Setting: Academic research institution. Participants: Fifty-seven typically developing right-handed children ages 9 to 12 yr with knowledge of cursive. Outcomes and Measures: Predicted quality, measured as the correlation between handwriting letter legibility (Evaluation Tool of Children’s Handwriting–Cursive [ETCH–C]) and predicted legibility (calculated from STEGA’s 120 Hz, nine-variable data). Results: STEGA successfully predicted handwriting (r2 5 .437, p < .001) using a support vector regression method. Angular error was the most important aspect of STEGA performance. STEGA was much faster to administer than the ETCH–C (M 5 6.7 min, SD 5 1.3, versus M 5 19.7 min, SD 5 5.2). Conclusions and Relevance: Assessment of motor control (and especially pen direction control) may provide a meaningful, objective way to assess handwriting. Future studies are needed to validate STEGA with a wider age range, but the initial results indicate that STEGA can provide the first rapid, quantitative, high-resolution, telehealth-capable assessment of the motor control that underpins handwriting. What This Article Adds: The ability to control pen direction may be the most important motor skill for successful handwriting. STEGA may provide the first criterion standard for the fine motor control skills that underpin handwriting, suitable for rehabilitation research and practice.},
+   author = {Benjamin A. Philip and Fuhai Li and Elizabeth Hawkins-Chernof and Ling Chen and Victoria Swamidass and Igor Zwir},
+   doi = {10.5014/ajot.2023.050098},
+   issn = {19437676},
+   issue = {3},
+   journal = {American Journal of Occupational Therapy},
+   month = {5},
+   pmid = {37310748},
+   publisher = {American Occupational Therapy Association, Inc},
+   title = {Motor Assessment With the STEGA iPad App to Measure Handwriting in Children},
+   volume = {77},
+   year = {2023}
+}
+@article{Gavenciak2025,
+   abstract = {Children who do not sufficiently develop graphomotor skills essential for handwriting often develop graphomotor disabilities (GD), impacting the self-esteem and academic performance of the individual. Current examination methods of GD consist of scales and questionaries, which lack objectivity, rely on the perceptual abilities of the examiner, and may lead to inadequately targeted remediation. Nowadays, one way to address the factor of subjectivity is to incorporate supportive machine learning (ML) based assessment. However, even with the increasing popularity of decision-support systems facilitating the diagnosis and assessment of GD, this field still lacks an understanding of deficient kinematics concerning the direction of pen movement. This study aims to explore the impact of movement direction on the manifestations of graphomotor difficulties in school-aged. We introduced a new fractional-order derivative-based approach enabling quantification of kinematic aspects of handwriting concerning the direction of movement using polar plot representation. We validated the novel features in a barrage of machine learning scenarios, testing various training methods based on extreme gradient boosting trees (XGBboost), Bayesian, and random search hyperparameter tuning methods. Results show that our novel features outperformed the baseline and provided a balanced accuracy of 87 % (sensitivity = 82 %, specificity = 92 %), performing binary classification (children with/without graphomotor difficulties). The final model peaked when using only 43 out of 250 novel features, showing that XGBoost can benefit from feature selection methods. Proposed features provide additional information to an automated classifier with the potential of human interpretability thanks to the possibility of easy visualization using polar plots.},
+   author = {Michal Gavenciak and Jan Mucha and Jiri Mekyska and Zoltan Galaz and Katarina Zvoncakova and Marcos Faundez-Zanuy},
+   doi = {10.1007/s12559-024-10360-7},
+   issn = {18669964},
+   issue = {1},
+   journal = {Cognitive Computation},
+   keywords = {Computer-aided diagnosis,Feature extraction,Fractional order derivatives,Graphomotor difficulties,Machine learning,Polar plot},
+   month = {2},
+   publisher = {Springer},
+   title = {Computer-Aided Diagnosis of Graphomotor Difficulties Utilizing Direction-Based Fractional Order Derivatives},
+   volume = {17},
+   year = {2025}
+}
+@techReport{Deschamps2021,
+   abstract = {Dysgraphia is a writing disorder that affects a significant part of the population, especially school aged children and particularly boys. Nowadays, dysgraphia is insufficiently diagnosed , partly because of the cumbersomeness of the existing tests. This study aims at developing an automated pre-diagnosis tool for dysgraphia allowing a wide screening among children. Indeed, a wider screening of the population would allow a better care for children with handwriting deficits. This study is based on the world's largest known database of handwriting samples and uses supervised learning algorithms (Support Vector Machine). Four graphic tablets and two acquisition software solutions were used, in order to ensure that the tool is not tablet dependent and can be used widely. A total of 580 children from 2nd to 5th grade, among which 122 with dysgraphia, were asked to perform the French version of the BHK test on a graphic tablet. Almost a hundred features were developed from these written tracks. The hyperparameters of the SVM and the most discriminating features between children with and without dysgraphia were selected on the training dataset comprised of 80% of the database (461 children). With these hyperparameters and features, the performances on the test dataset (119 children) were a sensitivity of 91% and a specificity of 81% for the detection of children with dysgraphia. Thus, our tool has an accuracy level similar to a human examiner. Moreover, it is widely usable, because of its independence to the tablet, to the acquisition software and to the age of the children thanks to a careful calibration and the use of a moving z-score calculation.},
+   author = {Louis Deschamps and Louis Devillaine and Clement Gaffet and Raphaël Lambert and Saifeddine Aloui and Jérôme Boutet and Etienne Labyt and Vincent Brault and Caroline Jolly},
+   issue = {2},
+   journal = {Advances in Artificial Intelligence and Machine Learning; Research},
+   keywords = {BHK test,Children,Diagnosis,Dysgraphia,Handwriting,SVM 114},
+   pages = {114-135},
+   title = {Development of a Pre-Diagnosis Tool Based on Machine Learning Algorithms on the BHK Test to Improve the Diagnosis of Dysgraphia},
+   volume = {1},
+   url = {https://www.oajaiml.com/},
+   year = {2021}
+}
+
+
+@techreport{kitchenham2007,
+  author      = {Kitchenham, Barbara and Charters, Stuart},
+  title       = {Guidelines for Performing Systematic Literature Reviews in Software Engineering},
+  institution = {Keele University and University of Durham},
+  number      = {EBSE-2007-01},
+  year        = {2007},
+  note        = {Version 2.3}
+}
+
+@article{brereton2007,
+  author  = {Brereton, O. Pearl and Kitchenham, Barbara A. and Budgen, David and Turner, Mark and Khalil, Mohamed},
+  title   = {Lessons from Applying the Systematic Literature Review Process within the Software Engineering Domain},
+  journal = {Journal of Systems and Software},
+  volume  = {80},
+  number  = {4},
+  pages   = {571--583},
+  year    = {2007},
+  doi     = {10.1016/j.jss.2006.07.009}
+}
+
+@article{kitchenham2009,
+  author  = {Kitchenham, Barbara and Brereton, O. Pearl and Budgen, David and Turner, Mark and Bailey, John and Linkman, Stephen},
+  title   = {Systematic Literature Reviews in Software Engineering -- A Systematic Literature Review},
+  journal = {Information and Software Technology},
+  volume  = {51},
+  number  = {1},
+  pages   = {7--15},
+  year    = {2009},
+  doi     = {10.1016/j.infsof.2008.09.009}
+}
+
+@article{kitchenham2010,
+  author  = {Kitchenham, Barbara and Pretorius, Rialette and Budgen, David and Brereton, O. Pearl and Turner, Mark and Niazi, Mahmood and Linkman, Stephen},
+  title   = {Systematic Literature Reviews in Software Engineering -- A Tertiary Study},
+  journal = {Information and Software Technology},
+  volume  = {52},
+  number  = {8},
+  pages   = {792--805},
+  year    = {2010},
+  doi     = {10.1016/j.infsof.2010.03.006}
+}
+
+@article{kitchenham2013,
+  author  = {Kitchenham, Barbara and Brereton, Pearl},
+  title   = {A Systematic Review of Systematic Review Process Research in Software Engineering},
+  journal = {Information and Software Technology},
+  volume  = {55},
+  number  = {12},
+  pages   = {2049--2075},
+  year    = {2013},
+  doi     = {10.1016/j.infsof.2013.07.010}
+}
+
+@article{carrera2022,
+  author  = {Carrera-Rivera, Angela and Ochoa, William and Larrinaga, Felix and Lasa, Ganix},
+  title   = {How-to Conduct a Systematic Literature Review: A Quick Guide for Computer Science Research},
+  journal = {MethodsX},
+  volume  = {9},
+  pages   = {101895},
+  year    = {2022},
+  doi     = {10.1016/j.mex.2022.101895}
+}
+
+@article{page2021prisma,
+  author  = {Page, Matthew J. and McKenzie, Joanne E. and Bossuyt, Patrick M. and Boutron, Isabelle and Hoffmann, Tammy C. and Mulrow, Cynthia D. and others},
+  title   = {The PRISMA 2020 Statement: An Updated Guideline for Reporting Systematic Reviews},
+  journal = {BMJ},
+  volume  = {372},
+  pages   = {n71},
+  year    = {2021},
+  doi     = {10.1136/bmj.n71}
+}
+
+@article{page2021explanation,
+  author  = {Page, Matthew J. and Moher, David and Bossuyt, Patrick M. and Boutron, Isabelle and Hoffmann, Tammy C. and Mulrow, Cynthia D. and others},
+  title   = {PRISMA 2020 Explanation and Elaboration: Updated Guidance and Exemplars for Reporting Systematic Reviews},
+  journal = {BMJ},
+  volume  = {372},
+  pages   = {n160},
+  year    = {2021},
+  doi     = {10.1136/bmj.n160}
+}
+
+@article{rethlefsen2021,
+  author  = {Rethlefsen, Melissa L. and Kirtley, Shona and Waffenschmidt, Siw and Ayala, Ana Patricia and Moher, David and Page, Matthew J. and Koffel, Jonathan B. and {PRISMA-S Group}},
+  title   = {PRISMA-S: An Extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews},
+  journal = {Systematic Reviews},
+  volume  = {10},
+  pages   = {39},
+  year    = {2021},
+  doi     = {10.1186/s13643-020-01542-z}
+}
+
+@article{mcgowan2016,
+  author  = {McGowan, Jessie and Sampson, Margaret and Salzwedel, Douglas M. and Cogo, Elise and Foerster, Vicki and Lefebvre, Carol},
+  title   = {PRESS Peer Review of Electronic Search Strategies: 2015 Guideline Statement},
+  journal = {Journal of Clinical Epidemiology},
+  volume  = {75},
+  pages   = {40--46},
+  year    = {2016},
+  doi     = {10.1016/j.jclinepi.2016.01.021}
+}
+
+@article{yang2021,
+  author  = {Yang, Lanxin and Zhang, He and Shen, Haifeng and Huang, Xin and Zhou, Xin and Rong, Guoping and Shao, Dong},
+  title   = {Quality Assessment in Systematic Literature Reviews: A Software Engineering Perspective},
+  journal = {Information and Software Technology},
+  volume  = {130},
+  pages   = {106397},
+  year    = {2021},
+  doi     = {10.1016/j.infsof.2020.106397}
+}
+
+@inproceedings{dyba2008,
+  author    = {Dyb{\aa}, Tore and Dings{\o}yr, Torgeir},
+  title     = {Strength of Evidence in Systematic Reviews in Software Engineering},
+  booktitle = {Proceedings of the Second ACM-IEEE International Symposium on Empirical Software Engineering and Measurement},
+  pages     = {178--187},
+  year      = {2008},
+  doi       = {10.1145/1414004.1414034}
+}
+
+@inproceedings{cruzes2011,
+  author    = {Cruzes, Daniela S. and Dyb{\aa}, Tore},
+  title     = {Recommended Steps for Thematic Synthesis in Software Engineering},
+  booktitle = {2011 International Symposium on Empirical Software Engineering and Measurement},
+  pages     = {275--284},
+  year      = {2011},
+  publisher = {IEEE},
+  doi       = {10.1109/ESEM.2011.36}
+}
+
+@article{campbell2020,
+  author  = {Campbell, Mhairi and McKenzie, Joanne E. and Sowden, Amanda and Katikireddi, Srinivasa Vittal and Brennan, Sue E. and Ellis, Simon and Hartmann-Boyce, Jamie and Ryan, Rebecca and Shepperd, Sasha and Thomas, James and Welch, Vivian and Thomson, Hilary},
+  title   = {Synthesis without Meta-analysis (SWiM) in Systematic Reviews: Reporting Guideline},
+  journal = {BMJ},
+  volume  = {368},
+  pages   = {l6890},
+  year    = {2020},
+  doi     = {10.1136/bmj.l6890}
+}
+
+@article{stefanovic2021,
+  author  = {Stefanovi{\'c}, Darko and Havzi, Sara and Nikoli{\'c}, Danilo and Daki{\'c}, Dusanka and Loli{\'c}, Teodora},
+  title   = {Analysis of the Tools to Support Systematic Literature Review in Software Engineering},
+  journal = {IOP Conference Series: Materials Science and Engineering},
+  volume  = {1163},
+  number  = {1},
+  pages   = {012013},
+  year    = {2021},
+  doi     = {10.1088/1757-899X/1163/1/012013}
+}
+
+@article{snyder2019,
+  author  = {Snyder, Hannah},
+  title   = {Literature Review as a Research Methodology: An Overview and Guidelines},
+  journal = {Journal of Business Research},
+  volume  = {104},
+  pages   = {333--339},
+  year    = {2019},
+  doi     = {10.1016/j.jbusres.2019.07.039}
+}
+
+@article{TUGWELL2021A5,
+title = {PRISMA 2020},
+journal = {Journal of Clinical Epidemiology},
+volume = {134},
+pages = {A5-A6},
+year = {2021},
+issn = {0895-4356},
+doi = {https://doi.org/10.1016/j.jclinepi.2021.04.008},
+url = {https://www.sciencedirect.com/science/article/pii/S089543562100130X},
+author = {Peter Tugwell and David Tovey}
+}
