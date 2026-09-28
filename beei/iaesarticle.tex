@@ -8,6 +8,7 @@
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{float}
+\usepackage{placeins}
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{longtable}
@@ -30,6 +31,7 @@
 \usepackage[font=normalsize]{subfig, caption}
 \usepackage{epstopdf}
 \usepackage[left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm, includehead, includefoot]{geometry}
+\setlength{\headheight}{35pt}
 \usepackage[justification=centering]{caption}
 \captionsetup{labelsep=period}
 \usepackage{titlesec}
@@ -45,6 +47,13 @@
 \usepackage[numbers]{natbib}
 \usepackage{ragged2e}
 \usepackage{hyperref,graphicx}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
 \usepackage{multirow}
 \usepackage{fleqn}
 \usepackage[most]{tcolorbox}
@@ -170,7 +179,7 @@ Email: wichian.sit@mfu.ac.th
 %% main text
 
 \section{Introducción}
-\label{}
+\label{sec:intro}
 
 La escritura manuscrita constituye una habilidad compleja durante el desarrollo infantil, en la que intervienen componentes grafomotores y cognitivos que contribuyen a la calidad y fluidez del desempeño escritor. En particular, la legibilidad y la fluidez constituyen dimensiones diferenciables del desempeño de escritura y presentan relaciones distintas con las habilidades grafomotoras y otros procesos asociados \cite{Downing2023}. Asimismo, la estructura del desempeño escritor en niños que se encuentran en las primeras etapas de adquisición de la escritura puede analizarse a partir de diferentes componentes relacionados con las habilidades grafomotoras y visuomotoras \cite{Truxius2024}, \cite{Khatib2022}. Estos aspectos pueden evaluarse mediante parámetros grafomotores específicos y pruebas estandarizadas orientadas a caracterizar el desempeño de escritura infantil \cite{Sparaci2025}.
 
@@ -220,28 +229,38 @@ A partir de este objetivo se formuló la siguiente pregunta principal de investi
 }
 \end{center}
 
-\vspace{0.4cm}
+\vspace{0.5em}
 
-Para responder de manera estructurada a la pregunta principal, se definieron cinco preguntas de investigación específicas, cada una orientada a una dimensión particular del análisis.
-
-\begin{table}[H]
-\centering
+\begin{longtable}{
+    |>{\centering\arraybackslash}p{0.08\textwidth}
+    |>{\raggedright\arraybackslash}p{0.56\textwidth}
+    |>{\raggedright\arraybackslash}p{0.28\textwidth}|}
 \caption{Preguntas de investigación de la revisión sistemática.}
-\label{tab:preguntas-investigacion}
-\renewcommand{\arraystretch}{1.35}
-\small
-
-\begin{tabularx}{\textwidth}{
-    >{\centering\arraybackslash}p{1.5cm}
-    >{\raggedright\arraybackslash}X
-    >{\raggedright\arraybackslash}p{4.2cm}
-}
+\label{tab:preguntas-investigacion}\\
 \hline
 \rowcolor{blue!10}
 \textbf{Código} &
 \textbf{Pregunta de investigación} &
 \textbf{Aspecto analizado} \\
 \hline
+\endfirsthead
+
+\hline
+\rowcolor{blue!10}
+\textbf{Código} &
+\textbf{Pregunta de investigación} &
+\textbf{Aspecto analizado} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{Continúa en la siguiente página} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+\scriptsize
 
 \textbf{RQ1} &
 ¿Qué características presentan las poblaciones infantiles estudiadas en investigaciones que utilizan visión computacional y Machine Learning para evaluar habilidades grafomotoras y de escritura? &
@@ -268,46 +287,57 @@ Calidad de escritura, características del trazo, fluidez, legibilidad, precisi�
 Métricas de evaluación y resultados de rendimiento de los sistemas y modelos. \\
 \hline
 
-\end{tabularx}
-\end{table}
+\end{longtable}
+
+\vspace{0.5em}
+
 Las preguntas de investigación fueron diseñadas de manera que cada una cubriera una dimensión específica de la evidencia necesaria para responder la pregunta principal. La RQ1 permitió caracterizar las poblaciones analizadas; la RQ2 permitió identificar las tecnologías y técnicas computacionales utilizadas; la RQ3 permitió determinar los métodos convencionales empleados como referencia; la RQ4 permitió identificar los indicadores de escritura y desempeño grafomotor evaluados; y la RQ5 permitió analizar las métricas y resultados de rendimiento reportados por los sistemas.
 
 La definición de estas preguntas permitió establecer una correspondencia directa entre los objetivos de la revisión, la estrategia de búsqueda, los criterios de selección y las variables utilizadas posteriormente durante la extracción de datos.
 
 Las preguntas fueron definidas considerando como población de interés a los niños en etapa de desarrollo de la escritura y de las habilidades grafomotoras, sin establecer un rango de edad artificialmente restrictivo.
+
 \subsection{Estrategia de búsqueda}
 
 La estrategia de búsqueda se diseñó a partir de los componentes conceptuales definidos para la revisión. Se consideraron términos relacionados con la población infantil, las tecnologías de inteligencia artificial y visión computacional, la escritura y los métodos de evaluación y referencia. La definición de los términos de búsqueda y su organización conceptual constituye una etapa fundamental para desarrollar una búsqueda sistemática reproducible \cite{rethlefsen2021}.
 
 La estructura conceptual de la estrategia de búsqueda se organizó mediante los componentes PICOC. Los términos utilizados en cada componente se presentan en la Tabla~\ref{tab:picoc}.
-\begin{table}[H]
-\centering
+
+\begin{longtable}{
+    |>{\centering\arraybackslash}p{0.11\textwidth}
+    |>{\centering\arraybackslash}p{0.22\textwidth}
+    |>{\raggedright\arraybackslash}p{0.55\textwidth}|}
 \caption{Componentes PICOC y términos utilizados en la estrategia de búsqueda.}
-\label{tab:picoc}
-
-\renewcommand{\arraystretch}{1.35}
-\setlength{\tabcolsep}{6pt}
-
-\begin{tabularx}{\textwidth}{
-    >{\centering\arraybackslash}m{1.8cm}
-    >{\centering\arraybackslash}m{3.2cm}
-    >{\raggedright\arraybackslash}X
-}
+\label{tab:picoc}\\
 \toprule
-
 \textbf{Componente} &
 \textbf{Elemento PICOC} &
 \textbf{Términos utilizados} \\
-
 \midrule
+\endfirsthead
+
+\toprule
+\textbf{Componente} &
+\textbf{Elemento PICOC} &
+\textbf{Términos utilizados} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{Continúa en la siguiente página} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\scriptsize
 
 \textbf{P} &
 \textbf{Population} &
 \textit{child}, \textit{children}, \textit{school children},
 \textit{school-age children}, \textit{pediatric},
 \textit{schoolchild}, \textit{schoolchildren} \\
-
-\addlinespace[2mm]
+\addlinespace[1mm]
 
 \textbf{I} &
 \textbf{Intervention} &
@@ -316,8 +346,7 @@ La estructura conceptual de la estrategia de búsqueda se organizó mediante los
 \textit{neural network}, \textit{image processing},
 \textit{convolutional neural network},
 \textit{handwriting recognition} \\
-
-\addlinespace[2mm]
+\addlinespace[1mm]
 
 \textbf{C} &
 \textbf{Comparison} &
@@ -327,33 +356,25 @@ La estructura conceptual de la estrategia de búsqueda se organizó mediante los
 \textit{reference}, \textit{standard},
 \textit{validation}, \textit{evaluation},
 \textit{assessment} \\
-
-\addlinespace[2mm]
+\addlinespace[1mm]
 
 \textbf{O} &
 \textbf{Outcome} &
 \textit{handwriting}, \textit{handwriting analysis},
 \textit{writing} \\
-
-\addlinespace[2mm]
+\addlinespace[1mm]
 
 \textbf{C} &
 \textbf{Context} &
 \textit{school}, \textit{education} \\
 
-\bottomrule
+\end{longtable}
 
-\end{tabularx}
-\end{table}
-La búsqueda se realizó en tres bases de datos científicas:
+\vspace{0.5em}
 
-\begin{itemize}
-    \item \textbf{Scopus}
-    \item \textbf{Web of Science}
-    \item \textbf{ScienceDirect}
-\end{itemize}
+La búsqueda se realizó en tres bases de datos científicas: Scopus, Webof Science y ScienceDirect.
 
-Se consideraron publicaciones correspondientes al periodo \textbf{2016--2026}, en idioma inglés, de acceso abierto y correspondientes a artículos con resultados empíricos. La búsqueda fue ejecutada durante \textbf{septiembre de 2026}.
+Se consideraron publicaciones correspondientes al periodo 2016--2026, en idioma inglés, de acceso abierto y correspondientes a artículos con resultados empíricos. La búsqueda fue ejecutada durante septiembre de 2026.
 
 La estrategia conceptual general fue adaptada a la sintaxis específica de cada base de datos. La adaptación de una estrategia general a las características y sintaxis propias de cada fuente bibliográfica es una práctica recomendada para favorecer la reproducibilidad de las búsquedas sistemáticas \cite{rethlefsen2021}. Las cadenas utilizadas fueron las siguientes.
 
@@ -362,8 +383,9 @@ La estrategia conceptual general fue adaptada a la sintaxis específica de cada 
 La estrategia conceptual general fue adaptada a la sintaxis específica de cada base de datos. 
 Las cadenas de búsqueda utilizadas se presentan en la Tabla~\ref{tab:cadenas-busqueda}.
 
-\begin{longtable}{|>{\raggedright\arraybackslash}p{0.18\textwidth}|
-                  >{\raggedright\arraybackslash}p{0.72\textwidth}|}
+\begin{longtable}{
+    |>{\raggedright\arraybackslash}p{0.14\textwidth}
+    |>{\raggedright\arraybackslash}p{0.78\textwidth}|}
 \caption{Cadenas de búsqueda utilizadas en las bases de datos científicas.}
 \label{tab:cadenas-busqueda}\\
 \hline
@@ -376,11 +398,20 @@ Las cadenas de búsqueda utilizadas se presentan en la Tabla~\ref{tab:cadenas-bu
 \hline
 \endhead
 
+\hline
+\multicolumn{2}{r}{Continúa en la siguiente página} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+\scriptsize
+
 % =========================
 % SCOPUS
 % =========================
 \textbf{Scopus} &
-{\footnotesize\ttfamily
+{\ttfamily
 (TITLE-ABS-KEY("child" OR "children" OR "school children" OR "school-age children" OR "pediatric" OR "schoolchild" OR "schoolchildren")
 \newline
 AND TITLE-ABS-KEY("machine learning" OR "deep learning" OR "artificial intelligence" OR "computer vision" OR "neural network" OR "image processing" OR "convolutional neural network" OR "handwriting recognition")
@@ -398,7 +429,7 @@ AND TITLE-ABS-KEY("school" OR "education"))
 % WEB OF SCIENCE
 % =========================
 \textbf{Web of Science} &
-{\footnotesize\ttfamily
+{\ttfamily
 (((ALL=("child" OR "children" OR "school children" OR "school-age children" OR "pediatric" OR "schoolchild" OR "schoolchildren"))
 \newline
 AND ALL=("machine learning" OR "deep learning" OR "artificial intelligence" OR "computer vision" OR "neural network" OR "image processing" OR "convolutional neural network" OR "handwriting recognition"))
@@ -414,39 +445,53 @@ AND ALL=("handwriting" OR "handwriting analysis" OR "writing"))
 % SCIENCEDIRECT
 % =========================
 \textbf{ScienceDirect} &
-{\footnotesize\ttfamily
+{\ttfamily
 ("child" OR "children")
 \newline
 AND ("machine learning" OR "computer vision")
 \newline
 AND ("handwriting" OR "handwriting analysis")
 \newline
-AND ("assessment" OR "evaluation")
+AND ("assessment" OR "evaluation"))
 }
 \\
 \hline
 
 \end{longtable}
 
-Los criterios de elegibilidad se aplicaron durante la revisión inicial de los registros recuperados. Cada artículo fue revisado individualmente y clasificado en Parsifal como \textbf{aceptado, rechazado o duplicado}. La definición explícita de criterios de inclusión y exclusión permite establecer de manera transparente las condiciones bajo las cuales un estudio puede formar parte de una revisión sistemática \cite{TUGWELL2021A5}.
+Los criterios de elegibilidad se aplicaron durante la revisión inicial de los registros recuperados. Cada artículo fue revisado individualmente y clasificado en Parsifal como aceptado, rechazado o duplicado. La definición explícita de criterios de inclusión y exclusión permite establecer de manera transparente las condiciones bajo las cuales un estudio puede formar parte de una revisión sistemática \cite{TUGWELL2021A5}.
 
-Los criterios de inclusión fueron:
 \subsection{Criterios de inclusión y exclusión}
 
-Los criterios de elegibilidad se definieron previamente con el propósito de mantener un proceso de selección sistemático y transparente. Cada registro recuperado fue revisado individualmente en Parsifal y clasificado como \textbf{aceptado, rechazado o duplicado}, de acuerdo con los criterios establecidos para la revisión \cite{kitchenham2007}.
+Los criterios de elegibilidad se definieron previamente con el propósito de mantener un proceso de selección sistemático y transparente. Cada registro recuperado fue revisado individualmente en Parsifal y clasificado como aceptado, rechazado o duplicado, de acuerdo con los criterios establecidos para la revisión \cite{kitchenham2007}.
 
-Para facilitar su identificación durante el proceso de selección, los criterios de inclusión fueron codificados como \textbf{IC} (\textit{Inclusion Criteria}), mientras que los criterios de exclusión fueron identificados como \textbf{EC} (\textit{Exclusion Criteria}).
+Para facilitar su identificación durante el proceso de selección, los criterios de inclusión fueron codificados como IC (\textit{Inclusion Criteria}), mientras que los criterios de exclusión fueron identificados como EC (\textit{Exclusion Criteria}).
 
-\begin{table}[H]
-\centering
+\begin{longtable}{
+    |>{\centering\arraybackslash}p{0.12\textwidth}
+    |>{\raggedright\arraybackslash}p{0.80\textwidth}|}
 \caption{Criterios de inclusión utilizados para la selección de estudios.}
-\label{tab:criterios-inclusion}
-\small
-\renewcommand{\arraystretch}{1.35}
-\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{1.5cm}|X|}
+\label{tab:criterios-inclusion}\\
 \hline
 \rowcolor{gray!20}
-\textbf{Código} & \textbf{Criterio de inclusión} \\ \hline
+\textbf{Código} & \textbf{Criterio de inclusión} \\ 
+\hline
+\endfirsthead
+
+\hline
+\rowcolor{gray!20}
+\textbf{Código} & \textbf{Criterio de inclusión} \\ 
+\hline
+\endhead
+
+\hline
+\multicolumn{2}{r}{Continúa en la siguiente página} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+\scriptsize
 
 \textbf{IC1} &
 El estudio analiza la escritura manuscrita o habilidades relacionadas con el desempeño grafomotor. \\ \hline
@@ -472,20 +517,35 @@ El estudio presenta resultados empíricos. \\ \hline
 \textbf{IC8} &
 El estudio utiliza técnicas de Machine Learning, Deep Learning, Inteligencia Artificial, visión computacional, procesamiento de imágenes u otras técnicas computacionales relacionadas con el análisis o evaluación de la escritura. \\ \hline
 
-\end{tabularx}
-\end{table}
+\end{longtable}
 
+\vspace{0.5em}
 
-\begin{table}[H]
-\centering
+\begin{longtable}{
+    |>{\centering\arraybackslash}p{0.12\textwidth}
+    |>{\raggedright\arraybackslash}p{0.80\textwidth}|}
 \caption{Criterios de exclusión utilizados para la selección de estudios.}
-\label{tab:criterios-exclusion}
-\small
-\renewcommand{\arraystretch}{1.35}
-\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{1.5cm}|X|}
+\label{tab:criterios-exclusion}\\
 \hline
 \rowcolor{gray!20}
-\textbf{Código} & \textbf{Criterio de exclusión} \\ \hline
+\textbf{Código} & \textbf{Criterio de exclusión} \\ 
+\hline
+\endfirsthead
+
+\hline
+\rowcolor{gray!20}
+\textbf{Código} & \textbf{Criterio de exclusión} \\ 
+\hline
+\endhead
+
+\hline
+\multicolumn{2}{r}{Continúa en la siguiente página} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+\scriptsize
 
 \textbf{EC1} &
 El estudio no presenta relación con el objetivo de la revisión. \\ \hline
@@ -505,49 +565,33 @@ El estudio no presenta resultados empíricos. \\ \hline
 \textbf{EC6} &
 El estudio no utiliza técnicas de Machine Learning, Deep Learning, Inteligencia Artificial, visión computacional o procesamiento de imágenes relacionadas con el análisis o evaluación de la escritura. \\ \hline
 
-\end{tabularx}
-\end{table}
+\end{longtable}
 
-La presencia de una condición o diagnóstico particular no constituyó por sí misma un criterio de exclusión. Por ello, se consideraron estudios realizados tanto con niños sin condiciones reportadas como con niños con disgrafía, dificultades de aprendizaje u otras condiciones, registrándose esta característica posteriormente como una variable de extracción.
+\vspace{0.5em}
 
-De igual manera, no se estableció un rango de edad rígido como criterio de exclusión. La edad y el grado escolar de los participantes fueron registrados durante la extracción de datos con el propósito de caracterizar las poblaciones estudiadas.
 La presencia de una condición o diagnóstico particular no constituyó por sí misma un criterio de exclusión. Por ello, se consideraron estudios realizados tanto con niños sin condiciones reportadas como con niños con disgrafía, dificultades de aprendizaje u otras condiciones, registrándose esta característica posteriormente como una variable de extracción.
 
 De igual manera, no se estableció un rango de edad rígido como criterio de exclusión. La edad y el grado escolar de los participantes fueron registrados durante la extracción de datos con el propósito de caracterizar las poblaciones estudiadas.
 
 \subsection{Proceso de identificación y selección de estudios}
 
-Los resultados obtenidos de las tres bases de datos fueron importados a Parsifal para centralizar la gestión de la revisión. Se recuperaron inicialmente \textbf{517 registros}, distribuidos de la siguiente manera:
+La búsqueda se realizó en tres bases de datos científicas: Scopus (n=206), Web of Science (n=491) y ScienceDirect (n=664). Los resultados obtenidos fueron importados a Parsifal para centralizar la gestión de la revisión. Se recuperaron inicialmente 1361 registros.
 
-\begin{itemize}
-    \item \textbf{Web of Science:} 357 registros.
-    \item \textbf{Scopus:} 52 registros.
-    \item \textbf{ScienceDirect:} 108 registros.
-\end{itemize}
-
-Una vez importados los registros, se realizó la identificación de duplicados. Se detectaron \textbf{9 registros duplicados}, los cuales fueron marcados como duplicados en Parsifal y no continuaron en el proceso de selección.
+Una vez importados los registros, se realizó la identificación de duplicados. Se detectaron 9 registros duplicados, los cuales fueron marcados como duplicados en Parsifal y no continuaron en el proceso de selección.
 
 Posteriormente, los registros restantes fueron revisados individualmente considerando su título, resumen y su correspondencia con los criterios de inclusión y exclusión definidos. En esta etapa se clasificaron los registros como aceptados o rechazados y, cuando un estudio fue rechazado, se registró el motivo correspondiente en Parsifal. Este procedimiento permitió documentar las decisiones adoptadas durante la selección de los estudios.
 
-Como resultado de esta etapa, se rechazaron \textbf{465 registros}, mientras que \textbf{43 artículos fueron aceptados} para continuar con la siguiente fase de evaluación.
+Como resultado de esta etapa, se rechazaron 465 registros, mientras que 43 artículos fueron aceptados para continuar con la siguiente fase de evaluación.
 
 El flujo de selección fue:
 
 \begin{center}
-    \textbf{517 registros identificados}
-    $\rightarrow$
-    \textbf{9 duplicados}
-    $\rightarrow$
-    \textbf{508 registros evaluados}
-    $\rightarrow$
-    \textbf{465 rechazados}
-    $\rightarrow$
-    \textbf{43 aceptados}
+517 registros identificados $\rightarrow$ 9 duplicados $\rightarrow$ 508 registros evaluados $\rightarrow$ 465 rechazados $\rightarrow$ 43 aceptados
 \end{center}
 
 El proceso de identificación, cribado, elegibilidad e inclusión de los estudios se reportó mediante un flujo basado en PRISMA 2020.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.90\textwidth]{images/prisma-diagram.png}
     \caption{Diagrama de flujo PRISMA del proceso de identificación y selección de estudios.}
@@ -558,16 +602,16 @@ La Figura~\ref{fig:prisma} presenta el proceso de identificación, selección y 
 
 \subsection{Evaluación de calidad metodológica}
 
-Los \textbf{43 artículos aceptados en la etapa inicial} fueron sometidos a una evaluación de calidad metodológica antes de formar parte de la muestra definitiva de la revisión. La evaluación de la calidad de los estudios primarios constituye una actividad relevante dentro de las revisiones sistemáticas, debido a que permite valorar la solidez y utilidad de la evidencia disponible \cite{kitchenham2010,kitchenham2013}.
+Los 43 artículos aceptados en la etapa inicial fueron sometidos a una evaluación de calidad metodológica antes de formar parte de la muestra definitiva de la revisión. La evaluación de la calidad de los estudios primarios constituye una actividad relevante dentro de las revisiones sistemáticas, debido a que permite valorar la solidez y utilidad de la evidencia disponible \cite{kitchenham2010},\cite{kitchenham2013}.
 
-La evaluación se realizó mediante un instrumento compuesto por \textbf{10 preguntas}, orientadas a valorar la claridad del objetivo, las características de la población, el procedimiento de adquisición de las muestras de escritura, las técnicas computacionales, los indicadores evaluados, el procedimiento de evaluación, los métodos de referencia, los resultados, la validación y las métricas de desempeño. La utilización de criterios explícitos permite establecer de forma sistemática cómo se valoró la calidad metodológica de los estudios incluidos \cite{yang2021}.
+La evaluación se realizó mediante un instrumento compuesto por 10 preguntas, orientadas a valorar la claridad del objetivo, las características de la población, el procedimiento de adquisición de las muestras de escritura, las técnicas computacionales, los indicadores evaluados, el procedimiento de evaluación, los métodos de referencia, los resultados, la validación y las métricas de desempeño. La utilización de criterios explícitos permite establecer de forma sistemática cómo se valoró la calidad metodológica de los estudios incluidos \cite{yang2021}.
 
 Las preguntas utilizadas fueron:
-\begin{longtable}{|>{\centering\arraybackslash}m{0.07\textwidth}|m{0.84\textwidth}|}
-
+\begin{longtable}{
+    |>{\centering\arraybackslash}p{0.05\textwidth}
+    |>{\raggedright\arraybackslash}p{0.88\textwidth}|}
 \caption{Preguntas utilizadas para la evaluación de calidad metodológica.}
 \label{tab:calidad}\\
-
 \hline
 \textbf{N.º} & \textbf{Pregunta de evaluación de calidad} \\ 
 \hline
@@ -575,7 +619,6 @@ Las preguntas utilizadas fueron:
 
 \multicolumn{2}{c}%
 {{\tablename\ \thetable{} -- continuación}} \\
-
 \hline
 \textbf{N.º} & \textbf{Pregunta de evaluación de calidad} \\ 
 \hline
@@ -587,6 +630,8 @@ Las preguntas utilizadas fueron:
 
 \hline
 \endlastfoot
+
+\scriptsize
 
 1 &
 ¿El estudio define claramente el objetivo relacionado con la evaluación o análisis de la escritura y/o habilidades grafomotoras infantiles? \\
@@ -629,40 +674,61 @@ Las preguntas utilizadas fueron:
 \hline
 
 \end{longtable}
+
+\vspace{0.5em}
+
 Cada pregunta fue valorada mediante tres categorías de respuesta:
-\textbf{Sí}, \textbf{Parcialmente} y \textbf{No}. A cada categoría se le
-asignó una puntuación de \textbf{1}, \textbf{0.5} y \textbf{0} puntos,
+Sí, Parcialmente y No. A cada categoría se le
+asignó una puntuación de 1, 0.5 y 0 puntos,
 respectivamente.
 
-La puntuación máxima posible fue de \textbf{10 puntos}. Como criterio de
-aceptación se estableció un puntaje \textbf{superior a 7.0 puntos}. En
+La puntuación máxima posible fue de 10 puntos. Como criterio de
+aceptación se estableció un puntaje superior a 7.0 puntos. En
 consecuencia, los estudios con una puntuación igual o inferior a 7.0 fueron
 excluidos de la muestra final. Este umbral fue definido previamente por los
 investigadores como parte del protocolo metodológico de la revisión.
 
-De los \textbf{43 artículos evaluados}, \textbf{31 estudios} superaron el
+De los 43 artículos evaluados, 31 estudios superaron el
 umbral establecido y fueron incluidos en la síntesis final, mientras que
-\textbf{12 estudios} fueron excluidos durante la evaluación de calidad.
+12 estudios fueron excluidos durante la evaluación de calidad.
 
-\begin{table}[H]
-\centering
+\begin{longtable}{
+    |>{\centering\arraybackslash}p{0.28\textwidth}
+    |>{\centering\arraybackslash}p{0.28\textwidth}
+    |>{\centering\arraybackslash}p{0.28\textwidth}|}
 \caption{Resultado de la evaluación de calidad metodológica.}
-\label{tab:resultado_calidad}
-\renewcommand{\arraystretch}{1.3}
-\begin{tabular}{|c|c|c|}
+\label{tab:resultado_calidad}\\
 \hline
 \textbf{Artículos evaluados} &
 \textbf{Excluidos por calidad} &
-\textbf{Estudios incluidos} \\ \hline
+\textbf{Estudios incluidos} \\ 
+\hline
+\endfirsthead
+
+\hline
+\textbf{Artículos evaluados} &
+\textbf{Excluidos por calidad} &
+\textbf{Estudios incluidos} \\ 
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+\scriptsize
 
 43 & 12 & 31 \\ \hline
 
-\end{tabular}
-\end{table}
+\end{longtable}
+
+\vspace{0.5em}
 
 \subsection{Participación de los revisores}
 
-El proceso de revisión fue realizado por \textbf{tres revisores}. Los tres participaron en las actividades de selección, evaluación de calidad y análisis de los estudios, aplicando los mismos criterios de inclusión, exclusión y evaluación definidos en el protocolo de la revisión.
+El proceso de revisión fue realizado por tres revisores. Los tres participaron en las actividades de selección, evaluación de calidad y análisis de los estudios, aplicando los mismos criterios de inclusión, exclusión y evaluación definidos en el protocolo de la revisión.
 
 Para mantener la consistencia del proceso, las decisiones de selección y evaluación fueron realizadas considerando los criterios metodológicos establecidos previamente. Cuando se presentaron discrepancias o dudas respecto a la clasificación o evaluación de un estudio, estas fueron discutidas entre los revisores hasta alcanzar un acuerdo sobre la decisión correspondiente.
 \subsection{Extracción de datos}
@@ -681,38 +747,36 @@ de los estudios primarios y la síntesis posterior de la evidencia
 Tabla~\ref{tab:variables_extraccion}.
 
 \begin{longtable}{
->{\raggedright\arraybackslash}p{0.22\textwidth}
->{\raggedright\arraybackslash}p{0.27\textwidth}
->{\raggedright\arraybackslash}p{0.43\textwidth}
-}
-
+    |>{\raggedright\arraybackslash}p{0.20\textwidth}
+    |>{\raggedright\arraybackslash}p{0.25\textwidth}
+    |>{\raggedright\arraybackslash}p{0.45\textwidth}|}
 \caption{Variables utilizadas para la extracción de datos de los estudios incluidos.}
 \label{tab:variables_extraccion}\\
-
 \toprule
-
 \textbf{Dimensión de análisis} &
 \textbf{Variable de extracción} &
 \textbf{Información / categorías registradas} \\
-
 \midrule
 \endfirsthead
 
 \multicolumn{3}{c}{
 {\tablename\ \thetable{} -- continuación}
 } \\
-
 \toprule
-
 \textbf{Dimensión de análisis} &
 \textbf{Variable de extracción} &
 \textbf{Información / categorías registradas} \\
-
 \midrule
 \endhead
 
 \bottomrule
+\multicolumn{3}{r}{Continúa en la siguiente página} \\
 \endfoot
+
+\bottomrule
+\endlastfoot
+
+\scriptsize
 
 % =========================================================
 % RQ1 - POBLACIÓN
@@ -912,23 +976,23 @@ la posterior síntesis de resultados a pesar de la heterogeneidad existente
 entre poblaciones, tareas de escritura, tecnologías de captura, algoritmos,
 indicadores y métricas de desempeño \cite{cruzes2011}.
 
-Debido a la diversidad de poblaciones, tareas de escritura, dispositivos de captura, características analizadas, algoritmos y métricas utilizadas por los estudios incluidos, la evidencia se sintetizó principalmente mediante un enfoque \textbf{descriptivo y narrativo}. La literatura revisada presenta diferentes propósitos, incluyendo la detección de dificultades de escritura, la clasificación de patrones y la estimación cuantitativa del desempeño, por lo que una comparación directa de todos los resultados mediante una única métrica no resulta apropiada \cite{cruzes2011,campbell2020}.
+Debido a la diversidad de poblaciones, tareas de escritura, dispositivos de captura, características analizadas, algoritmos y métricas utilizadas por los estudios incluidos, la evidencia se sintetizó principalmente mediante un enfoque descriptivo y narrativo. La literatura revisada presenta diferentes propósitos, incluyendo la detección de dificultades de escritura, la clasificación de patrones y la estimación cuantitativa del desempeño, por lo que una comparación directa de todos los resultados mediante una única métrica no resulta apropiada \cite{cruzes2011},\cite{campbell2020}.
 
 La síntesis se organizó de acuerdo con las preguntas de investigación:
 
 \begin{itemize}
-    \item \textbf{RQ1:} se analizaron las características de las poblaciones, incluyendo tamaño muestral, edad, grado escolar y condición o diagnóstico.
+    \item RQ1: se analizaron las características de las poblaciones, incluyendo tamaño muestral, edad, grado escolar y condición o diagnóstico.
 
-    \item \textbf{RQ2:} se identificaron y agruparon las tecnologías de captura, técnicas de visión computacional, procesamiento de imágenes y algoritmos de Machine Learning y Deep Learning.
+    \item RQ2: se identificaron y agruparon las tecnologías de captura, técnicas de visión computacional, procesamiento de imágenes y algoritmos de Machine Learning y Deep Learning.
 
-    \item \textbf{RQ3:} se caracterizaron los métodos e instrumentos convencionales utilizados como referencia cuando fueron reportados.
+    \item RQ3: se caracterizaron los métodos e instrumentos convencionales utilizados como referencia cuando fueron reportados.
 
-    \item \textbf{RQ4:} se agruparon los principales indicadores de escritura y desempeño grafomotor evaluados.
+    \item RQ4: se agruparon los principales indicadores de escritura y desempeño grafomotor evaluados.
 
-    \item \textbf{RQ5:} se analizaron las métricas y resultados de rendimiento reportados por los sistemas y modelos.
+    \item RQ5: se analizaron las métricas y resultados de rendimiento reportados por los sistemas y modelos.
 \end{itemize}
 
-Además de la síntesis narrativa, se utilizaron estadísticas descriptivas, frecuencias y distribuciones para representar la presencia de determinadas características entre los estudios seleccionados. Estos resultados se presentan mediante tablas y gráficos en la sección de resultados para facilitar la identificación de tendencias en la literatura \cite{cruzes2011,campbell2020}.
+Además de la síntesis narrativa, se utilizaron estadísticas descriptivas, frecuencias y distribuciones para representar la presencia de determinadas características entre los estudios seleccionados. Estos resultados se presentan mediante tablas y gráficos en la sección de resultados para facilitar la identificación de tendencias en la literatura \cite{cruzes2011}, \cite{campbell2020}.
 
 \subsection{Consideraciones sobre validez y limitaciones de la revisión}
 
@@ -947,29 +1011,29 @@ En términos generales, la revisión siguió el siguiente flujo:
 \begin{center}
 \begin{minipage}{0.90\textwidth}
 \centering
-\textbf{Definición del objetivo y preguntas de investigación}
+Definición del objetivo y preguntas de investigación
 $\rightarrow$
-\textbf{diseño de la estrategia de búsqueda}
+diseño de la estrategia de búsqueda
 $\rightarrow$
-\textbf{búsqueda en Scopus, Web of Science y ScienceDirect}
+búsqueda en Scopus, Web of Science y ScienceDirect
 $\rightarrow$
-\textbf{importación de registros a Parsifal}
+importación de registros a Parsifal
 $\rightarrow$
-\textbf{identificación de duplicados}
+identificación de duplicados
 $\rightarrow$
-\textbf{selección mediante criterios de inclusión y exclusión}
+selección mediante criterios de inclusión y exclusión
 $\rightarrow$
-\textbf{43 artículos aceptados}
+43 artículos aceptados
 $\rightarrow$
-\textbf{evaluación de calidad mediante 10 preguntas}
+evaluación de calidad mediante 10 preguntas
 $\rightarrow$
-\textbf{exclusión de estudios con puntuación $\leq 7.0$}
+exclusión de estudios con puntuación $\leq 7.0$
 $\rightarrow$
-\textbf{31 estudios incluidos}
+31 estudios incluidos
 $\rightarrow$
-\textbf{extracción de datos}
+extracción de datos
 $\rightarrow$
-\textbf{síntesis descriptiva y narrativa de la evidencia}.
+síntesis descriptiva y narrativa de la evidencia.
 \end{minipage}
 \end{center}
 
@@ -979,43 +1043,150 @@ $\rightarrow$
 
 %%resultadossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 
-\section{Results and Discussion}
-\label{}
-This section explains the results of research and at the same time is given the comprehensive discussion. Results can be presented in figures, graphs, tables and others that make the reader understand easily [14], [15]. The discussion can be made in several sub-sections.
+\section{Resultados y Discusión}
+\label{sec:resultados}
 
-\subsection{Sub section 1}
-Equations should be placed at the center of the line and provided consecutively with equation numbers in parentheses flushed to the right margin, as in (1). The use of Microsoft Equation Editor or MathType is preferred.
+Esta sección presenta los hallazgos obtenidos tras la ejecución del protocolo de revisión, organizados temáticamente para responder a las preguntas de investigación planteadas. Todos los hallazgos cuantitativos presentados a continuación derivan del análisis de los 31 artículos finales incluidos.
 
-\begin{equation}
-E_v - E = \frac{\hbar}{2.m}(k_x^2 + k_y^2)
-\end{equation}
-%% make sure to add \vspace{.005em} after the end of equation
-All symbols that have not been mentioned in the equation should be explained in the following text.
+\subsection{Selección de Estudios (PRISMA)}
+La búsqueda inicial identificó 1361 registros provenientes de Scopus (n=206), Web of Science (n=491) y ScienceDirect (n=664). Antes del cribado, se eliminaron 9 registros duplicados, 1 mediante herramientas de automatización y 843 por otros motivos. Durante la fase de cribado (n=508), se excluyeron 441 registros por no estar relacionados con el tema (EC1) y 2 por no corresponder a la población infantil (EC2). Posteriormente, se evaluaron 65 artículos a texto completo, excluyendo 16 estudios por no utilizar técnicas de ML/CV (EC3) y 6 por carecer de resultados empíricos (EC4). Finalmente, tras la evaluación de calidad de 43 artículos, se excluyeron 12 documentos adicionales, resultando en 31 estudios primarios incluidos en la revisión cuantitativa y cualitativa \cite{page2021prisma}.
 
+\subsection{Análisis Bibliométrico Global}
+El análisis de la producción científica anual demostró un crecimiento exponencial sostenido a partir del periodo 2019-2020, impulsado por el auge del Machine Learning y la digitalización educativa y clínica. Previamente (2008-2018), la producción fue incipiente con menos de 15 artículos por año. El volumen alcanzó un pico máximo proyectado para 2025 con más de 140 artículos (véase la Figura~\ref{fig:annual_prod}).
 
-\subsection{Sub section 2}
-Proper citation of other works should be made to avoid plagiarism. When referring to a reference item, please use the reference number as in [16] or [17] for multiple references. The use of ”Ref [18]...” should be employed for any reference citation at the beginning of sentence. For any reference with more than 3 or more authors, only the first author is to be written followed by \emph{et al.} (e.g. in [19]). Examples of reference items of different categories shown in the References section. Each item in the references section should be typed using 8 pt font size [20]–[25].
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/annual_production.png}
+    \caption{Producción científica anual bruta.}
+    \label{fig:annual_prod}
+\end{figure}
 
-\subsubsection {Subsub section 1}
-yy
+Al analizar las palabras clave mediante un Mapa de Árbol (TreeMap) y una Nube de Palabras, los términos dominantes fueron \textit{machine learning}, \textit{deep learning}, \textit{artificial intelligence}, \textit{human} y \textit{child}. Sin embargo, se evidenció que un 66\% de la muestra en crudo carecía de palabras clave indexadas (\textit{na}) y presentaba dispersión hacia patologías periféricas como dislexia o autismo (véase la Figura~\ref{fig:treemap} y la Figura~\ref{fig:wordcloud}).
 
-\subsubsection {Subsub section 2}
-zz
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/TreeMap_palabras_claves.png}
+    \caption{Mapa de árbol (TreeMap) de las palabras clave.}
+    \label{fig:treemap}
+\end{figure}
 
-\section{Conclusion}
-\label{}
-Provide a statement that what is expected, as stated in the "INTRODUCTION" section can ultimately result in "RESULTS AND DISCUSSION" section, so there is compatibility. Moreover, the prospects for the development of research results and the application of further studies can also be added to the next (based on the results and discussion).
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/WordCloud.png}
+    \caption{Nube de palabras de los términos más frecuentes.}
+    \label{fig:wordcloud}
+\end{figure}
+
+El diagrama de Sankey (Gráfico de tres campos) confirmó la trazabilidad temática desde los títulos hacia las palabras clave, demostrando un flujo coherente entre la ingeniería computacional y la evaluación de la escritura infantil, aunque con un alto ruido bibliográfico que justificó la aplicación del protocolo PRISMA (véase la Figura~\ref{fig:sankey}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/ThreeFieldPlot.png}
+    \caption{Diagrama de Sankey mostrando la relación entre Títulos, Descriptores y Palabras Clave.}
+    \label{fig:sankey}
+\end{figure}
+
+\subsection{Características de la Población Infantil (RQ1)}
+Para caracterizar a las poblaciones estudiadas, el análisis reveló que la categoría correspondiente a niños saludables dominó la muestra con 17 estudios (54.8\%), lo que reflejó que los modelos computacionales se entrenaron prioritariamente en desarrollo típico. Un grupo amplio (15 estudios, 48.4\%) analizó poblaciones mixtas. Por su parte, el enfoque clínico directo se abordó en 3 estudios enfocados en niños con disgrafía y 2 en estudiantes con dificultades de aprendizaje (véase la Figura~\ref{fig:population}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/RQ1_Poblacion.png}
+    \caption{Frecuencia de la condición de la población evaluada.}
+    \label{fig:population}
+\end{figure}
+
+\subsection{Tecnologías de Captura y Algoritmos de Machine Learning (RQ2)}
+En la dimensión de dispositivos de captura, existió un predominio de tecnologías dinámicas (53.1\%), agrupando tabletas digitales y lápices inteligentes para la captura \textit{online}. La captura estática (\textit{offline}) mediante imágenes digitales representó el 28.1\%. Los medios ópticos como cámaras (9.4\%) y video (6.2\%) se emplearon para la visión computacional en tiempo real (véase la Figura~\ref{fig:tech}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/RQ2_Tecnologia_Donut.png}
+    \caption{Distribución de tecnología y dispositivos de captura.}
+    \label{fig:tech}
+\end{figure}
+
+Respecto a los modelos computacionales, las Redes Neuronales Convolucionales (CNN) se consolidaron como la arquitectura estándar para el procesamiento de imágenes estáticas (10 estudios). En aprendizaje automático tradicional para datos dinámicos, \textit{Random Forest} (n=6) y SVM (n=5) fueron los más adoptados. Los modelos de series temporales (LSTM y RNN) acumularon 5 implementaciones para procesar trazos secuenciales (véase la Figura~\ref{fig:algorithms}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/RQ2_Algoritmos_ML_DL.png}
+    \caption{Frecuencia de algoritmos y técnicas de Inteligencia Artificial.}
+    \label{fig:algorithms}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Métodos de Referencia e Indicadores Grafomotores (RQ3 y RQ4)}
+Para establecer la validez de los sistemas (RQ3), el método de referencia principal fue el \textit{ground truth} o etiquetado humano directo (16 estudios). Adicionalmente, una proporción significativa comparó el algoritmo contra instrumentos de alto valor clínico: pruebas estandarizadas (n=8) y evaluación experta (n=8). Los diagnósticos previos (n=3) y valoraciones docentes (n=3) tuvieron una participación menor (véase la Figura~\ref{fig:eval_methods}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/RQ3_Metodos_Referencia.png}
+    \caption{Frecuencia de métodos de evaluación convencionales y de referencia.}
+    \label{fig:eval_methods}
+\end{figure}
+
+En cuanto a las métricas grafomotoras (RQ4), se observó una alta heterogeneidad (21 estudios analizaron variables misceláneas como inclinación o pausas). En los indicadores estáticos, las características geométricas del trazo dominaron (n=18), seguidas por la calidad de escritura (n=8) y legibilidad (n=6). Los indicadores cinemáticos (\textit{online}) más evaluados fueron la velocidad (n=9), la precisión del trazo (n=7) y la fluidez (n=6), evidenciando que la IA permite cuantificar variables dinámicas invisibles al evaluador humano (véase la Figura~\ref{fig:indicators}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/RQ4_Indicadores_Grafomotores.png}
+    \caption{Ranking de indicadores grafomotores y características evaluadas.}
+    \label{fig:indicators}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Discusión}
+\label{sec:discusion}
+
+\subsubsection{Discusión de la Selección de Estudios (PRISMA)}
+% TODO: Discutir la selección de estudios. Citas a agregar por el equipo.
+% \cite{...}
+
+\subsubsection{Discusión del Análisis Bibliométrico Global}
+% TODO: Discutir el análisis bibliométrico. Citas a agregar por el equipo.
+% \cite{...}
+
+\subsubsection{Discusión de las Características de la Población Infantil (RQ1)}
+% TODO: Discutir RQ1. Citas a agregar por el equipo.
+% \cite{...}
+
+\subsubsection{Discusión de Tecnologías de Captura y Algoritmos (RQ2)}
+% TODO: Discutir RQ2. Citas a agregar por el equipo.
+% \cite{...}
+
+\subsubsection{Discusión de Métodos de Referencia e Indicadores (RQ3 y RQ4)}
+% TODO: Discutir RQ3 y RQ4. Citas a agregar por el equipo.
+% \cite{...}
+
+\subsubsection{Limitaciones de la Revisión}
+% TODO: Discutir limitaciones. Citas a agregar por el equipo.
+% \cite{...}
+
+\FloatBarrier
+
+\section{Conclusiones}
+\label{sec:conclusiones}
+
+Esta Revisión Sistemática de la Literatura analizó el estado del arte respecto al uso de tecnologías de visión computacional y aprendizaje automático para la evaluación de habilidades grafomotoras en la infancia. A partir de la síntesis de 31 estudios primarios, se concluye que la inteligencia artificial representa una herramienta prometedora para objetivar y automatizar el análisis de la escritura, superando las limitaciones de la evaluación manual tradicional.
+
+En relación con las poblaciones estudiadas (RQ1), se evidenció que la mayoría de los modelos actuales se entrenan utilizando datos de niños con desarrollo típico. Existe una necesidad imperativa de ampliar la investigación hacia poblaciones clínicas, específicamente en niños con disgrafía o dificultades de aprendizaje, para validar la eficacia diagnóstica de estos sistemas en entornos reales.
+
+Respecto a las tecnologías empleadas (RQ2), la captura dinámica (online) mediante tabletas digitales se posiciona como la tendencia principal, apoyada por algoritmos de aprendizaje automático como \textit{Random Forest}, Máquinas de Vectores de Soporte (SVM) y modelos de series temporales (LSTM). Paralelamente, las Redes Neuronales Convolucionales (CNN) dominan el análisis estático (offline) basado en imágenes.
+
+En cuanto a la validación y las métricas (RQ3 y RQ4), aunque el etiquetado humano sigue siendo el método de referencia principal, un número significativo de estudios ya contrasta sus resultados con pruebas clínicas estandarizadas. El principal aporte de los sistemas computacionales radica en su capacidad para extraer y cuantificar indicadores cinemáticos y dinámicos (como velocidad, fluidez y presión del trazo) que resultan invisibles al ojo humano, complementando las características geométricas y de legibilidad tradicionales.
+
+Finalmente, los trabajos futuros deben orientarse a la creación de conjuntos de datos abiertos, estandarizados y representativos de la diversidad poblacional, así como al establecimiento de métricas de evaluación comunes que permitan la comparabilidad directa entre sistemas y la traslación efectiva a la práctica clínica y educativa.
 
 \section*{ACKNOWLEDGMENTS (if applicable)}
-\label{}
 This section should acknowledge individuals who provided personal assistance to the work but do not meet the criteria for authorship, detailing their contributions. It is imperative to obtain consent from all individuals listed in the acknowledgments.
 
 \section*{FUNDING INFORMATION (mandatory)}
-\label{}
 This section should describe sources of funding agency that have supported the work. Authors should state how the research described in their article was funded, including grant numbers if applicable. Include the following (or similar) statement if there is no funding involved: Authors state no funding involved.
 
 \section*{AUTHOR CONTRIBUTIONS STATEMENT (mandatory)}
-\label{}
 This journal uses the Contributor Roles Taxonomy (CRediT) to recognize individual author contributions, reduce authorship disputes, and facilitate collaboration. \textbf{The recommended number of authors is at least two, with one of them designated as the corresponding author.} The corresponding author will be responsible for all correspondence related to the paper and must ensure that the other authors are included in the communication regarding submission, revision, and publication processes. We encourage authors to include a statement in the paper that shares and accurately describes each author's contribution. \textbf{To be eligible for authorship, each individual must have contributed to at least one of the following: conceptualization, methodology, formal analysis, or investigation, as well as at least one aspect of writing (either original draft preparation or writing reviews and editing).}
 
 \begin{table}[H]
@@ -1062,19 +1233,15 @@ This journal uses the Contributor Roles Taxonomy (CRediT) to recognize individua
 \end{table}
 
 \section*{CONFLICT OF INTEREST STATEMENT (mandatory)}
-\label{}
 To ensure fair and objective decision-making, authors must declare any associations that pose a conflict of interest (financial, personal, or professional) in connection with manuscripts. Non-financial competing interests include a declaration of political, personal, religious, ideological, academic, and intellectual competing interests. The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. If there are no conflicts of interest, please include the following author's statement: Authors state no conflict of interest.
 
 \section*{INFORMED CONSENT (if applicable)}
-\label{}
 The protection of privacy is a legal right that must not be breached without individual informed consent. In cases where the identification of personal information is necessary for scientific reasons, authors should obtain full documentation of informed consent, including written permission from the patient prior to inclusion in the study. Incorporate the following (or a similar) statement: We have obtained informed consent from all individuals included in this study.
 
 \section*{ETHICAL APPROVAL (if applicable)}
-\label{}
 When papers talk about using people or animals, authors should make it clear that the research followed all national rules and institutional policies, and it was approved by the authors' institutional review board or a similar committee. The Helsinki Declaration's tenets must guide all investigations involving human subjects. Authors must also identify the committee or review board approving the experiments and provide a statement indicating approval of the research. Incorporate the following (or a similar) statement: The research related to human use has been complied with all the relevant national regulations and institutional policies in accordance with the tenets of the Helsinki Declaration and has been approved by the authors' institutional review board or equivalent committee; or: The research related to animal use has been complied with all the relevant national regulations and institutional policies for the care and use of animals.
 
 \section*{DATA AVAILABILITY (mandatory)}
-\label{}
 The data availability statement is a valuable link between a paper’s results and the supporting evidence. It is a brief statement about whether the authors of an article have made the evidence supporting their findings available, and if so, where readers may access it. Data availability statements help to promote transparency and reproducibility in research and to increase the visibility of valuable evidence produced or gathered during the course of research. As part of our commitment to supporting open research, our journal now requires all manuscripts to include a data availability statement in order to be accepted for publication. Examples:
 \begin{itemize}[topsep=0.3ex, itemsep=0.3ex, parsep=0.2ex]
 	\item[-] The supporting data of this study are openly available in [repository's name] at http://doi.org/[doi], reference number [reference number].
@@ -1088,7 +1255,6 @@ The data availability statement is a valuable link between a paper’s results a
 \end{itemize}
 
 \section*{REFERENCES}
-\label{}
 \footnotesize
 The main references are international journals and proceedings. All references should be to the most pertinent, up-to-date sources, \textbf{and the minimum number of references} should be \textbf{25} (for original research papers) and \textbf{50} (for review papers). References are written in IEEE style. You can access a more comprehensive guide at http://ipmuonline.com/guide/refstyle.pdf. Use a tool such as EndNote, Mendeley, or Zotero for reference management and formatting; choose \textbf{IEEE style}. Please use a consistent format for references—see examples (8 pt):
 
