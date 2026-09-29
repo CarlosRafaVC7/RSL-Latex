@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.25)  25 SEP 2026 10:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.25)  29 SEP 2026 08:25
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **./iaesarticle.tex
 (iaesarticle.tex
@@ -138,7 +137,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box61
 )
-(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2026/05/19 v2.18d AMS math features
 \@mathmargin=\skip71
 
@@ -575,6 +576,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip103
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 56.
+
 (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip104
@@ -1056,32 +1059,32 @@ File: pgflibraryfadings.code.tex 2026-08-01 v3.1.12 (3.1.12)
 de.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '6.10.0'
 ))
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 8
-3.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 9
+2.
  (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (iaesarticle.aux)
 \openout1 = `iaesarticle.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 
 (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
@@ -1121,7 +1124,7 @@ Package caption Info: End \AtBeginDocument code.
 * \oddsidemargin=13.08827pt
 * \evensidemargin=-1.1381pt
 * \topmargin=-1.1381pt
-* \headheight=12.0pt
+* \headheight=35.0pt
 * \headsep=10.84006pt
 * \topskip=10.0pt
 * \footskip=30.0pt
@@ -1138,7 +1141,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring ON on input line 92.
 (iaesarticle.out) (iaesarticle.out)
 \@outlinefile=\write4
 \openout4 = `iaesarticle.out'.
@@ -1150,409 +1153,269 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks50
 \inpenc@posthook=\toks51
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 109
+LaTeX Font Info:    Trying to load font information for U+msa on input line 119
 .
 
 (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 109
+LaTeX Font Info:    Trying to load font information for U+msb on input line 119
 .
 
 (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <> on input line 109.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 119.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 109.
+(Font)              size <5> substituted on input line 119.
 
-<CC.png, id=42, 2007.5pt x 707.64375pt>
+<CC.png, id=150, 2007.5pt x 707.64375pt>
 File: CC.png Graphic file (type png)
 <use CC.png>
-Package pdftex.def Info: CC.png  used on input line 151.
+Package pdftex.def Info: CC.png  used on input line 161.
 (pdftex.def)             Requested size: 80.28632pt x 28.30092pt.
-
-Package natbib Warning: Citation `Downing2023' on page 1 undefined on input lin
-e 175.
-
-
-Package natbib Warning: Citation `Truxius2024' on page 1 undefined on input lin
-e 175.
-
-
-Package natbib Warning: Citation `Khatib2022' on page 1 undefined on input line
- 175.
-
-
-Package natbib Warning: Citation `Sparaci2025' on page 1 undefined on input lin
-e 175.
-
-
-Package natbib Warning: Citation `Asselborn2018' on page 1 undefined on input l
-ine 177.
-
-
-Package natbib Warning: Citation `Asselborn2018' on page 1 undefined on input l
-ine 177.
-
-
-Package natbib Warning: Citation `Asselborn2020' on page 1 undefined on input l
-ine 177.
-
-
-Package natbib Warning: Citation `Philip2023' on page 1 undefined on input line
- 177.
-
-
-Package natbib Warning: Citation `Sparaci2025' on page 1 undefined on input lin
-e 177.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 34.48999pt, for example:
-(fancyhdr)                \setlength{\headheight}{34.48999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-22.48999pt}.
-
 [1{C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/L
 ENOVO/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
  <./CC.png>]
-
-Package natbib Warning: Citation `Deschamps2021' on page 2 undefined on input l
-ine 179.
-
-
-Package natbib Warning: Citation `Lomurno2023' on page 2 undefined on input lin
-e 179.
-
-
-Package natbib Warning: Citation `Gavenciak2025' on page 2 undefined on input l
-ine 179.
-
-
-Package natbib Warning: Citation `Villegas-Ch2023' on page 2 undefined on input
- line 179.
-
-
-Package natbib Warning: Citation `Inoue2025' on page 2 undefined on input line 
-179.
-
-
-Package natbib Warning: Citation `Villegas-Cubas2026' on page 2 undefined on in
-put line 179.
-
-
-Package natbib Warning: Citation `Kunhoth2024' on page 2 undefined on input lin
-e 181.
-
-
-Package natbib Warning: Citation `Fallah2025' on page 2 undefined on input line
- 181.
-
-
-Package natbib Warning: Citation `Kunhoth2024' on page 2 undefined on input lin
-e 183.
-
-
-Package natbib Warning: Citation `Fallah2025' on page 2 undefined on input line
- 183.
-
-
-Package natbib Warning: Citation `kitchenham2007' on page 2 undefined on input 
-line 196.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-
-Package natbib Warning: Citation `stefanovic2021' on page 3 undefined on input 
-line 200.
-
-
-Package natbib Warning: Citation `kitchenham2007' on page 3 undefined on input 
-line 202.
+Overfull \hbox (2.31772pt too wide) in alignment at lines 238--247
+ [] [] [] 
+ []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-
-Package natbib Warning: Citation `rethlefsen2021' on page 4 undefined on input 
-line 280.
+Overfull \hbox (2.31772pt too wide) in alignment at lines 247--255
+ [] [] [] 
+ []
 
 
-LaTeX Warning: Reference `tab:picoc' on page 4 undefined on input line 282.
+Overfull \hbox (2.31772pt too wide) in alignment at lines 255--259
+ [] [] [] 
+ []
 
 
-Overfull \hbox (3.22453pt too wide) in paragraph at lines 346--346
+Overfull \hbox (2.31772pt too wide) in alignment at lines 259--262
+ [] [] [] 
+ []
+
+
+Overfull \hbox (2.31772pt too wide) in alignment at lines 262--291
+ [] [] [] 
+ []
+
+[3]
+Overfull \hbox (1.5196pt too wide) in paragraph at lines 314--314
  []|\OT1/ptm/b/n/10 Componente| 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (1.5196pt too wide) in paragraph at lines 321--321
+ []|\OT1/ptm/b/n/10 Componente| 
+ []
 
- [4]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-51.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
+15.
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+[4] [5]
+<images/prisma-diagram.png, id=231, 2038.61626pt x 2556.55125pt>
+File: images/prisma-diagram.png Graphic file (type png)
+<use images/prisma-diagram.png>
+Package pdftex.def Info: images/prisma-diagram.png  used on input line 597.
+(pdftex.def)             Requested size: 396.91325pt x 497.7258pt.
+ [6] [7 <./images/prisma-diagram.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+17.
 
 (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+[8] [9] [10] [11]
+<images/annual_production.png, id=284, 443.40656pt x 295.1025pt>
+File: images/annual_production.png Graphic file (type png)
+<use images/annual_production.png>
+Package pdftex.def Info: images/annual_production.png  used on input line 1060.
 
-Package natbib Warning: Citation `rethlefsen2021' on page 5 undefined on input 
-line 358.
+(pdftex.def)             Requested size: 308.71106pt x 205.47162pt.
+<images/TreeMap_palabras_claves.png, id=287, 4215.75pt x 2107.875pt>
+File: images/TreeMap_palabras_claves.png Graphic file (type png)
+<use images/TreeMap_palabras_claves.png>
+Package pdftex.def Info: images/TreeMap_palabras_claves.png  used on input line
+ 1069.
+(pdftex.def)             Requested size: 308.71106pt x 154.35283pt.
+<images/WordCloud.png, id=288, 4215.75pt x 2107.875pt>
+File: images/WordCloud.png Graphic file (type png)
+<use images/WordCloud.png>
+Package pdftex.def Info: images/WordCloud.png  used on input line 1076.
+(pdftex.def)             Requested size: 308.71106pt x 154.35283pt.
+<images/ThreeFieldPlot.png, id=290, 4215.75pt x 2107.875pt>
+File: images/ThreeFieldPlot.png Graphic file (type png)
+<use images/ThreeFieldPlot.png>
+Package pdftex.def Info: images/ThreeFieldPlot.png  used on input line 1085.
+(pdftex.def)             Requested size: 352.81552pt x 176.38486pt.
+ [12 <./images/annual_production.png> <./images/TreeMap_palabras_claves.png>] [
+13 <./images/WordCloud.png> <./images/ThreeFieldPlot.png>]
+<images/RQ1_Poblacion.png, id=308, 715.473pt x 426.1521pt>
+File: images/RQ1_Poblacion.png Graphic file (type png)
+<use images/RQ1_Poblacion.png>
+Package pdftex.def Info: images/RQ1_Poblacion.png  used on input line 1095.
+(pdftex.def)             Requested size: 308.71106pt x 183.87257pt.
+<images/RQ2_Tecnologia_Donut.png, id=310, 566.5968pt x 570.933pt>
+File: images/RQ2_Tecnologia_Donut.png Graphic file (type png)
+<use images/RQ2_Tecnologia_Donut.png>
+Package pdftex.def Info: images/RQ2_Tecnologia_Donut.png  used on input line 11
+05.
+(pdftex.def)             Requested size: 308.71106pt x 311.06955pt.
+<images/RQ2_Algoritmos_ML_DL.png, id=312, 860.013pt x 498.663pt>
+File: images/RQ2_Algoritmos_ML_DL.png Graphic file (type png)
+<use images/RQ2_Algoritmos_ML_DL.png>
+Package pdftex.def Info: images/RQ2_Algoritmos_ML_DL.png  used on input line 11
+14.
+(pdftex.def)             Requested size: 308.71106pt x 179.00113pt.
+<images/RQ3_Metodos_Referencia.png, id=314, 715.473pt x 426.1521pt>
+File: images/RQ3_Metodos_Referencia.png Graphic file (type png)
+<use images/RQ3_Metodos_Referencia.png>
+Package pdftex.def Info: images/RQ3_Metodos_Referencia.png  used on input line 
+1124.
+(pdftex.def)             Requested size: 308.71106pt x 183.87257pt.
+<images/RQ4_Indicadores_Grafomotores.png, id=316, 715.2321pt x 498.663pt>
+File: images/RQ4_Indicadores_Grafomotores.png Graphic file (type png)
+<use images/RQ4_Indicadores_Grafomotores.png>
+Package pdftex.def Info: images/RQ4_Indicadores_Grafomotores.png  used on input
+ line 1133.
+(pdftex.def)             Requested size: 308.71106pt x 215.23506pt.
 
-
-LaTeX Warning: Reference `tab:cadenas-busqueda' on page 5 undefined on input li
-ne 363.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-83.
-(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-[5]
-
-Package natbib Warning: Citation `TUGWELL2021A5' on page 6 undefined on input l
-ine 431.
-
-
-Package natbib Warning: Citation `kitchenham2007' on page 6 undefined on input 
-line 436.
-
-
+[14 <./images/RQ1_Poblacion.png>] [15 <./images/RQ2_Tecnologia_Donut.png> <./im
+ages/RQ2_Algoritmos_ML_DL.png>] [16 <./images/RQ3_Metodos_Referencia.png> <./im
+ages/RQ4_Indicadores_Grafomotores.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-
-LaTeX Warning: File `beei/images/prisma-diagram.png' not found on input line 55
-2.
-
-
-iaesarticle.tex:552: Package pdftex.def Error: File `beei/images/prisma-diagram
-.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.552 ...extwidth]{beei/images/prisma-diagram.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[7]
-
-LaTeX Warning: Reference `fig:prisma' on page 8 undefined on input line 557.
-
-
-Package natbib Warning: Citation `kitchenham2010' on page 8 undefined on input 
-line 561.
-
-
-Package natbib Warning: Citation `kitchenham2013' on page 8 undefined on input 
-line 561.
-
-
-Overfull \hbox (16.40337pt too wide) in paragraph at lines 561--562
-[]\OT1/ptm/m/n/10 Los \OT1/ptm/b/n/10 43 art[]^^Pculos acep-ta-dos en la etapa 
-ini-cial \OT1/ptm/m/n/10 fueron someti-dos a una eval-u-aci[]on de cal-i-dad me
-todol[]ogica
- []
-
-
-Package natbib Warning: Citation `yang2021' on page 8 undefined on input line 5
-63.
-
-[8]
-
-Package natbib Warning: Citation `cruzes2011' on page 9 undefined on input line
- 680.
-
-
-LaTeX Warning: Reference `tab:variables_extraccion' on page 9 undefined on inpu
-t line 681.
-
-[9]
-Overfull \hbox (0.71774pt too wide) in alignment at lines 687--699
- [] [] [] 
- []
-
-
-Overfull \hbox (0.71774pt too wide) in alignment at lines 699--712
- [] [] [] 
- []
-
-
-Overfull \hbox (0.71774pt too wide) in alignment at lines 712--715
- [] [] [] 
- []
-
-
-Overfull \hbox (0.71774pt too wide) in alignment at lines 715--898
- [] [] [] 
- []
-
-[10]
-
-Package natbib Warning: Citation `cruzes2011' on page 11 undefined on input lin
-e 913.
-
-
-Package natbib Warning: Citation `cruzes2011' on page 11 undefined on input lin
-e 915.
-
-
-Package natbib Warning: Citation `campbell2020' on page 11 undefined on input l
-ine 915.
-
-
-Package natbib Warning: Citation `cruzes2011' on page 11 undefined on input lin
-e 931.
-
-
-Package natbib Warning: Citation `campbell2020' on pagyour file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? lines 937--938
-[]\OT1/ptm/m/n/10 Asimismo, se con-sid-er-aron []unicamente pub-li-ca-ciones en
- ingl[]es y art[]^^Pculos con texto com-pleto disponible
- []
-
-[12] [13] [14]
-No file iaesarticle.bbl.
-[15]
-<Author1.jpg, id=154, 74.5695pt x 93.294pt>
+ [17]
+[18] [19] (iaesarticle.bbl [20]) [21]
+<Author1.jpg, id=367, 74.5695pt x 93.294pt>
 File: Author1.jpg Graphic file (type jpg)
 <use Author1.jpg>
-Package pdftex.def Info: Author1.jpg  used on input line 1200.
+Package pdftex.def Info: Author1.jpg  used on input line 1363.
 (pdftex.def)             Requested size: 71.13757pt x 89.00034pt.
 
-Overfull \hbox (2.85114pt too wide) in paragraph at lines 1200--1200
+Overfull \hbox (2.85114pt too wide) in paragraph at lines 1363--1363
  [][] 
  []
 
-<orcid.png, id=157, 18.0675pt x 18.0675pt>
+<orcid.png, id=370, 18.0675pt x 18.0675pt>
 File: orcid.png Graphic file (type png)
 <use orcid.png>
-Package pdftex.def Info: orcid.png  used on input line 1202.
+Package pdftex.def Info: orcid.png  used on input line 1365.
 (pdftex.def)             Requested size: 7.22853pt x 7.22852pt.
-<gscholar.png, id=159, 9.198pt x 9.198pt>
+<gscholar.png, id=372, 9.198pt x 9.198pt>
 File: gscholar.png Graphic file (type png)
 <use gscholar.png>
-Package pdftex.def Info: gscholar.png  used on input line 1203.
+Package pdftex.def Info: gscholar.png  used on input line 1366.
 (pdftex.def)             Requested size: 7.22853pt x 7.22858pt.
-<scopus.png, id=161, 9.1542pt x 9.1542pt>
+<scopus.png, id=374, 9.1542pt x 9.1542pt>
 File: scopus.png Graphic file (type png)
 <use scopus.png>
-Package pdftex.def Info: scopus.png  used on input line 1204.
+Package pdftex.def Info: scopus.png  used on input line 1367.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
-
-Package hyperref Warning: Suppressing link with empty target on input line 1205
-.
-
-<wos.png, id=162, 9.1542pt x 9.1542pt>
+<wos.png, id=376, 9.1542pt x 9.1542pt>
 File: wos.png Graphic file (type png)
 <use wos.png>
-Package pdftex.def Info: wos.png  used on input line 1205.
+Package pdftex.def Info: wos.png  used on input line 1368.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
-<Author22.jpg, id=163, 69.3135pt x 89.0235pt>
+<Author22.jpg, id=377, 69.3135pt x 89.0235pt>
 File: Author22.jpg Graphic file (type jpg)
 <use Author22.jpg>
-Package pdftex.def Info: Author22.jpg  used on input line 1209.
+Package pdftex.def Info: Author22.jpg  used on input line 1372.
 (pdftex.def)             Requested size: 71.13245pt x 91.3597pt.
 
-Overfull \hbox (2.84601pt too wide) in paragraph at lines 1209--1209
+Overfull \hbox (2.84601pt too wide) in paragraph at lines 1372--1372
  [][] 
  []
 
 File: orcid.png Graphic file (type png)
 <use orcid.png>
-Package pdftex.def Info: orcid.png  used on input line 1211.
+Package pdftex.def Info: orcid.png  used on input line 1374.
 (pdftex.def)             Requested size: 7.22853pt x 7.22852pt.
 File: gscholar.png Graphic file (type png)
 <use gscholar.png>
-Package pdftex.def Info: gscholar.png  used on input line 1212.
+Package pdftex.def Info: gscholar.png  used on input line 1375.
 (pdftex.def)             Requested size: 7.22853pt x 7.22858pt.
 File: scopus.png Graphic file (type png)
 <use scopus.png>
-Package pdftex.def Info: scopus.png  used on input line 1213.
+Package pdftex.def Info: scopus.png  used on input line 1376.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
 File: wos.png Graphic file (type png)
 <use wos.png>
-Package pdftex.def Info: wos.png  used on input line 1214.
+Package pdftex.def Info: wos.png  used on input line 1377.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
-<Author3.jpg, id=169, 137.01187pt x 170.13562pt>
+<Author3.jpg, id=383, 137.01187pt x 170.13562pt>
 File: Author3.jpg Graphic file (type jpg)
 <use Author3.jpg>
-Package pdftex.def Info: Author3.jpg  used on input line 1218.
+Package pdftex.def Info: Author3.jpg  used on input line 1381.
 (pdftex.def)             Requested size: 71.13368pt x 88.33083pt.
 
-Overfull \hbox (2.84724pt too wide) in paragraph at lines 1218--1218
+Overfull \hbox (2.84724pt too wide) in paragraph at lines 1381--1381
  [][] 
  []
 
 File: orcid.png Graphic file (type png)
 <use orcid.png>
-Package pdftex.def Info: orcid.png  used on input line 1220.
+Package pdftex.def Info: orcid.png  used on input line 1383.
 (pdftex.def)             Requested size: 7.22853pt x 7.22852pt.
 File: gscholar.png Graphic file (type png)
 <use gscholar.png>
-Package pdftex.def Info: gscholar.png  used on input line 1221.
+Package pdftex.def Info: gscholar.png  used on input line 1384.
 (pdftex.def)             Requested size: 7.22853pt x 7.22858pt.
 File: scopus.png Graphic file (type png)
 <use scopus.png>
-Package pdftex.def Info: scopus.png  used on input line 1222.
+Package pdftex.def Info: scopus.png  used on input line 1385.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
-
-Package hyperref Warning: Suppressing link with empty target on input line 1223
-.
-
 File: wos.png Graphic file (type png)
 <use wos.png>
-Package pdftex.def Info: wos.png  used on input line 1223.
+Package pdftex.def Info: wos.png  used on input line 1386.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
 
-Package natbib Warning: There were undefined citations.
+Underfull \vbox (badness 7814) has occurred while \output is active []
 
-[16 <./orcid.png> <./gscholar.png> <./scopus.png> <./wos.png> <./Author1.jpg> <
-./Author22.jpg> <./Author3.jpg>]
+ [22 <./orcid.png> <./gscholar.png> <./scopus.png> <./wos.png> <./Author1.jpg> 
+<./Author22.jpg>] [23 <./Author3.jpg>]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (iaesarticle.aux)
@@ -1565,53 +1428,33 @@ L3 programming layer <2026-08-10>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `iaesarticle.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `iaesarticle.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  5EDBF1A70934ADE09DEEC17D57F5DF79;3770.
-
-Package lastpage Warning: Rerun to get the references right on input line 1226.
-
-
+Package rerunfilecheck Info: File `iaesarticle.out' has not changed.
+(rerunfilecheck)             Checksum: 63FF6B610EB95C4E343D69CA337E2BB7;6913.
  ) 
 Here is how much of TeX's memory you used:
- 32049 strings out of 467441
- 646874 string characters out of 5407105
- 1178959 words of memory out of 5000000
- 60744 multiletter control sequences out of 15000+600000
- 662659 words of font info for 114 fonts, out of 8000000 for 9000
+ 32294 strings out of 467441
+ 651972 string characters out of 5407105
+ 1187316 words of memory out of 5000000
+ 60934 multiletter control sequences out of 15000+600000
+ 663222 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,15n,109p,1343b,662s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,15n,109p,1352b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmmi10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/LENOVO/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/LENOVO/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/LENOVO/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Use
-rs/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/
-ucrr8a.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
-/utmb8a.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/time
-s/utmbi8a.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
-mes/utmr8a.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
-imes/utmr8a.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmri8a.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/ur
-w/zapfding/uzdr.pfb>
-Output written on iaesarticle.pdf (16 pages, 396372 bytes).
+msfonts/cm/cmr10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/LENOVO/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/LENOVO/AppData
+/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/LENOVO/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/LENOVO/App
+Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/LENOVO/A
+ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/LENOVO/
+AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/LENOVO
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/LENO
+VO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on iaesarticle.pdf (23 pages, 6357500 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 477 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 481 words of extra memory for PDF output out of 10000 (max. 10000000)
 
