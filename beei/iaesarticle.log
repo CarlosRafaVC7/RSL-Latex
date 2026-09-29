@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.25)  29 SEP 2026 08:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.25)  29 SEP 2026 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1280,11 +1280,11 @@ File: images/TreeMap_palabras_claves.png Graphic file (type png)
 Package pdftex.def Info: images/TreeMap_palabras_claves.png  used on input line
  1069.
 (pdftex.def)             Requested size: 308.71106pt x 154.35283pt.
-<images/WordCloud.png, id=288, 4215.75pt x 2107.875pt>
+<images/WordCloud.png, id=288, 1748.78343pt x 877.02657pt>
 File: images/WordCloud.png Graphic file (type png)
 <use images/WordCloud.png>
 Package pdftex.def Info: images/WordCloud.png  used on input line 1076.
-(pdftex.def)             Requested size: 308.71106pt x 154.35283pt.
+(pdftex.def)             Requested size: 308.71106pt x 154.82018pt.
 <images/ThreeFieldPlot.png, id=290, 4215.75pt x 2107.875pt>
 File: images/ThreeFieldPlot.png Graphic file (type png)
 <use images/ThreeFieldPlot.png>
@@ -1292,30 +1292,30 @@ Package pdftex.def Info: images/ThreeFieldPlot.png  used on input line 1085.
 (pdftex.def)             Requested size: 352.81552pt x 176.38486pt.
  [12 <./images/annual_production.png> <./images/TreeMap_palabras_claves.png>] [
 13 <./images/WordCloud.png> <./images/ThreeFieldPlot.png>]
-<images/RQ1_Poblacion.png, id=308, 715.473pt x 426.1521pt>
+<images/RQ1_Poblacion.png, id=309, 715.473pt x 426.1521pt>
 File: images/RQ1_Poblacion.png Graphic file (type png)
 <use images/RQ1_Poblacion.png>
 Package pdftex.def Info: images/RQ1_Poblacion.png  used on input line 1095.
 (pdftex.def)             Requested size: 308.71106pt x 183.87257pt.
-<images/RQ2_Tecnologia_Donut.png, id=310, 566.5968pt x 570.933pt>
+<images/RQ2_Tecnologia_Donut.png, id=311, 566.5968pt x 570.933pt>
 File: images/RQ2_Tecnologia_Donut.png Graphic file (type png)
 <use images/RQ2_Tecnologia_Donut.png>
 Package pdftex.def Info: images/RQ2_Tecnologia_Donut.png  used on input line 11
 05.
 (pdftex.def)             Requested size: 308.71106pt x 311.06955pt.
-<images/RQ2_Algoritmos_ML_DL.png, id=312, 860.013pt x 498.663pt>
+<images/RQ2_Algoritmos_ML_DL.png, id=313, 860.013pt x 498.663pt>
 File: images/RQ2_Algoritmos_ML_DL.png Graphic file (type png)
 <use images/RQ2_Algoritmos_ML_DL.png>
 Package pdftex.def Info: images/RQ2_Algoritmos_ML_DL.png  used on input line 11
 14.
 (pdftex.def)             Requested size: 308.71106pt x 179.00113pt.
-<images/RQ3_Metodos_Referencia.png, id=314, 715.473pt x 426.1521pt>
+<images/RQ3_Metodos_Referencia.png, id=315, 715.473pt x 426.1521pt>
 File: images/RQ3_Metodos_Referencia.png Graphic file (type png)
 <use images/RQ3_Metodos_Referencia.png>
 Package pdftex.def Info: images/RQ3_Metodos_Referencia.png  used on input line 
 1124.
 (pdftex.def)             Requested size: 308.71106pt x 183.87257pt.
-<images/RQ4_Indicadores_Grafomotores.png, id=316, 715.2321pt x 498.663pt>
+<images/RQ4_Indicadores_Grafomotores.png, id=317, 715.2321pt x 498.663pt>
 File: images/RQ4_Indicadores_Grafomotores.png Graphic file (type png)
 <use images/RQ4_Indicadores_Grafomotores.png>
 Package pdftex.def Info: images/RQ4_Indicadores_Grafomotores.png  used on input
@@ -1329,7 +1329,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
 [18] [19] (iaesarticle.bbl [20]) [21]
-<Author1.jpg, id=367, 74.5695pt x 93.294pt>
+<Author1.jpg, id=368, 74.5695pt x 93.294pt>
 File: Author1.jpg Graphic file (type jpg)
 <use Author1.jpg>
 Package pdftex.def Info: Author1.jpg  used on input line 1363.
@@ -1339,27 +1339,27 @@ Overfull \hbox (2.85114pt too wide) in paragraph at lines 1363--1363
  [][] 
  []
 
-<orcid.png, id=370, 18.0675pt x 18.0675pt>
+<orcid.png, id=371, 18.0675pt x 18.0675pt>
 File: orcid.png Graphic file (type png)
 <use orcid.png>
 Package pdftex.def Info: orcid.png  used on input line 1365.
 (pdftex.def)             Requested size: 7.22853pt x 7.22852pt.
-<gscholar.png, id=372, 9.198pt x 9.198pt>
+<gscholar.png, id=373, 9.198pt x 9.198pt>
 File: gscholar.png Graphic file (type png)
 <use gscholar.png>
 Package pdftex.def Info: gscholar.png  used on input line 1366.
 (pdftex.def)             Requested size: 7.22853pt x 7.22858pt.
-<scopus.png, id=374, 9.1542pt x 9.1542pt>
+<scopus.png, id=375, 9.1542pt x 9.1542pt>
 File: scopus.png Graphic file (type png)
 <use scopus.png>
 Package pdftex.def Info: scopus.png  used on input line 1367.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
-<wos.png, id=376, 9.1542pt x 9.1542pt>
+<wos.png, id=377, 9.1542pt x 9.1542pt>
 File: wos.png Graphic file (type png)
 <use wos.png>
 Package pdftex.def Info: wos.png  used on input line 1368.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
-<Author22.jpg, id=377, 69.3135pt x 89.0235pt>
+<Author22.jpg, id=378, 69.3135pt x 89.0235pt>
 File: Author22.jpg Graphic file (type jpg)
 <use Author22.jpg>
 Package pdftex.def Info: Author22.jpg  used on input line 1372.
@@ -1385,7 +1385,7 @@ File: wos.png Graphic file (type png)
 <use wos.png>
 Package pdftex.def Info: wos.png  used on input line 1377.
 (pdftex.def)             Requested size: 7.22853pt x 7.22879pt.
-<Author3.jpg, id=383, 137.01187pt x 170.13562pt>
+<Author3.jpg, id=384, 137.01187pt x 170.13562pt>
 File: Author3.jpg Graphic file (type jpg)
 <use Author3.jpg>
 Package pdftex.def Info: Author3.jpg  used on input line 1381.
@@ -1434,7 +1434,7 @@ Package rerunfilecheck Info: File `iaesarticle.out' has not changed.
 Here is how much of TeX's memory you used:
  32294 strings out of 467441
  651972 string characters out of 5407105
- 1187316 words of memory out of 5000000
+ 1187320 words of memory out of 5000000
  60934 multiletter control sequences out of 15000+600000
  663222 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1452,9 +1452,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/LENOVO/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/LENOVO
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/LENO
 VO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on iaesarticle.pdf (23 pages, 6357500 bytes).
+Output written on iaesarticle.pdf (23 pages, 6298260 bytes).
 PDF statistics:
- 477 PDF objects out of 1000 (max. 8388607)
+ 478 PDF objects out of 1000 (max. 8388607)
  96 named destinations out of 1000 (max. 500000)
  481 words of extra memory for PDF output out of 10000 (max. 10000000)
 

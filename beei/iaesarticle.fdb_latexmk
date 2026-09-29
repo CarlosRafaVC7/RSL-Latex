@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex iaesarticle"] 1790688336.60229 "iaesarticle.aux" "iaesarticle.bbl" "iaesarticle" 1790688346.01145 0
+["bibtex iaesarticle"] 1790688336.60229 "iaesarticle.aux" "iaesarticle.bbl" "iaesarticle" 1790690650.98704 0
   "./IEEEtran.bst" 1790350130 59506 016987d9be15acf51cdd7252d40ecec2 ""
   "./exportIntro.bib" 1790688180 40973 7aab46bcd4f5ec39e944e62f613c39c3 ""
-  "iaesarticle.aux" 1790688344 12575 2daadd57e15e469cdbf67277bad81e80 "pdflatex"
+  "iaesarticle.aux" 1790690649 12575 2daadd57e15e469cdbf67277bad81e80 "pdflatex"
   (generated)
   "iaesarticle.bbl"
   "iaesarticle.blg"
   (rewritten before read)
-["pdflatex"] 1790688337.04125 "iaesarticle.tex" "iaesarticle.pdf" "iaesarticle" 1790688346.01225 0
+["pdflatex"] 1790690640.43233 "iaesarticle.tex" "iaesarticle.pdf" "iaesarticle" 1790690650.98822 0
   "Author1.jpg" 1790350130 10742 178158293255a659dac6716dcf10356e ""
   "Author22.jpg" 1790350130 42341 98a0a63daccdcc554b5ab5cdd61d408a ""
   "Author3.jpg" 1790350130 10142 14238f0982c9f4b15f94cb4059b699c3 ""
@@ -250,10 +250,10 @@
   "C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "CC.png" 1790350130 101676 64764444cd8263c37a06c552114614b9 ""
   "gscholar.png" 1790350130 532 a4c0570688fdc7f85646219de9e78472 ""
-  "iaesarticle.aux" 1790688344 12575 2daadd57e15e469cdbf67277bad81e80 "pdflatex"
+  "iaesarticle.aux" 1790690649 12575 2daadd57e15e469cdbf67277bad81e80 "pdflatex"
   "iaesarticle.bbl" 1790688336 7818 9e61a40bf4d6042806c03568ae4d7eb8 "bibtex iaesarticle"
   "iaesarticle.cls" 1790350130 24603 ae7d4add5c194cc13264d98d853a5480 ""
-  "iaesarticle.out" 1790688344 6913 63ff6b610eb95c4e343d69ca337e2bb7 "pdflatex"
+  "iaesarticle.out" 1790690649 6913 63ff6b610eb95c4e343d69ca337e2bb7 "pdflatex"
   "iaesarticle.tex" 1790688180 81847 c550460d1d427be16195c7ec3cb5c901 ""
   "images/RQ1_Poblacion.png" 1790688180 105128 d868e7acad410fd0c8b8a8f9219b31c2 ""
   "images/RQ2_Algoritmos_ML_DL.png" 1790688180 156108 4b1fece65ead32aecbbe497ffb47a542 ""
@@ -262,7 +262,7 @@
   "images/RQ4_Indicadores_Grafomotores.png" 1790688180 147734 3cf5a6c17fd226121709191d9b55e1dc ""
   "images/ThreeFieldPlot.png" 1790688180 3747264 2840a2d38be7148f84a7e046d765dfcd ""
   "images/TreeMap_palabras_claves.png" 1790688180 227794 0c4d753ee2d2745b1e49bd2c2f9daffa ""
-  "images/WordCloud.png" 1790688180 983087 46d63b45fd3752a5839cb6194b61d217 ""
+  "images/WordCloud.png" 1790689091 1064922 a40cc1f409e153832129fee99ce1475a ""
   "images/annual_production.png" 1790688180 32226 66adc75a8deca608535dd3b6cf73e3eb ""
   "images/prisma-diagram.png" 1790350130 510476 3bc2d55487a2b3864d882759732bfbcf ""
   "orcid.png" 1790350130 467 61fe41615548b04faded663189319509 ""
