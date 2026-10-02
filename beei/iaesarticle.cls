@@ -24,7 +24,7 @@
 %% Version and identification
 %% -----------------------------
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{iaesarticle2}
+\ProvidesClass{iaesarticle}
               [2012/11/17 v0.2
                IAES Journal LaTeX document class]
 
