@@ -10,49 +10,86 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: exportIntro.bib
+Warning--I didn't find a database entry for "abdulkadir2020classification"
+Warning--I didn't find a database entry for "shravya2024air"
+Warning--I didn't find a database entry for "zaibi2024early"
+Warning--I didn't find a database entry for "pardos2022characterizing"
+Warning--I didn't find a database entry for "galaz2020advanced"
+Warning--I didn't find a database entry for "rahim2024enhanced"
+Warning--I didn't find a database entry for "brons2021assessing"
+Warning--I didn't find a database entry for "khalid2024automating"
+Warning--I didn't find a database entry for "boehme2024machine"
+Warning--I didn't find a database entry for "ikermane2023digital"
+Warning--I didn't find a database entry for "shin2022handwriting"
+Warning--I didn't find a database entry for "bublin2023handwriting"
+Warning--I didn't find a database entry for "dui2022identification"
+Warning--I didn't find a database entry for "inoue2024assessing"
+Warning--I didn't find a database entry for "gouraguine2025toward"
+Warning--I didn't find a database entry for "bonneton2020can"
+Warning--I didn't find a database entry for "vanjari2026novel"
+Warning--I didn't find a database entry for "villegasch2024optimizing"
+Warning--I didn't find a database entry for "hwang2025automatic"
+Warning--I didn't find a database entry for "polsley2021detecting"
+Warning--I didn't find a database entry for "huang2025predicting"
+Warning--I didn't find a database entry for "duangmanee2025reliability"
+Warning--I didn't find a database entry for "serpaandrade2021design"
+Warning--I didn't find a database entry for "alshehri2026calligraphic"
+Warning--I didn't find a database entry for "villegascubas2026interactive"
+Warning--I didn't find a database entry for "lee2019development"
+Warning--I didn't find a database entry for "gupta2024tracing"
+Warning--I didn't find a database entry for "talkar2020assessment"
+Warning--I didn't find a database entry for "gavenciak2025impact"
+Warning--I didn't find a database entry for "devillaine2021analysis"
+Warning--I didn't find a database entry for "alshehri2025image"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--missing institution in Inoue
+Warning--empty year in Inoue
+Warning--empty journal in Shin
+Warning--empty year in Shin
+Warning--missing institution in Bouhamoum2024
 
 Done.
-You've used 25 entries,
+You've used 44 entries,
             4039 wiz_defined-function locations,
-            981 strings with 13773 characters,
-and the built_in function-call counts, 17581 in all, are:
-= -- 1397
-> -- 586
-< -- 93
-+ -- 296
-- -- 127
-* -- 881
-:= -- 2717
-add.period$ -- 51
-call.type$ -- 25
-change.case$ -- 26
-chr.to.int$ -- 162
-cite$ -- 25
-duplicate$ -- 1362
-empty$ -- 1336
-format.name$ -- 152
-if$ -- 3983
+            1127 strings with 19270 characters,
+and the built_in function-call counts, 31663 in all, are:
+= -- 2462
+> -- 1065
+< -- 185
++ -- 556
+- -- 231
+* -- 1591
+:= -- 4791
+add.period$ -- 91
+call.type$ -- 44
+change.case$ -- 45
+chr.to.int$ -- 366
+cite$ -- 49
+duplicate$ -- 2411
+empty$ -- 2424
+format.name$ -- 269
+if$ -- 7194
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 275
-newline$ -- 102
-num.names$ -- 25
-pop$ -- 641
+int.to.str$ -- 44
+missing$ -- 487
+newline$ -- 163
+num.names$ -- 44
+pop$ -- 1154
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1339
+skip$ -- 2386
 stack$ -- 0
-substring$ -- 449
-swap$ -- 1086
-text.length$ -- 39
+substring$ -- 958
+swap$ -- 1944
+text.length$ -- 63
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 25
-warning$ -- 0
-while$ -- 54
-width$ -- 27
-write$ -- 267
+type$ -- 44
+warning$ -- 5
+while$ -- 97
+width$ -- 46
+write$ -- 446
+(There were 36 warnings)

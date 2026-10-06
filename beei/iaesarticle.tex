@@ -690,43 +690,43 @@ Las preguntas utilizadas fueron:
 
 \scriptsize
 
-QQ1 &
+Q1 &
 ¿El estudio define claramente el objetivo relacionado con la evaluación o análisis de la escritura y/o habilidades grafomotoras infantiles? \\
 \hline
 
-QQ2 &
+Q2 &
 ¿El estudio describe claramente las características de la población infantil estudiada, incluyendo tamaño de muestra, edad, grado escolar y condición o diagnóstico cuando corresponde? \\
 \hline
 
-QQ3 &
+Q3 &
 ¿El estudio describe claramente el procedimiento utilizado para obtener las muestras de escritura, incluyendo la tarea de escritura y el dispositivo o medio de captura? \\
 \hline
 
-QQ4 &
+Q4 &
 ¿El estudio describe suficientemente las técnicas de visión computacional, procesamiento de imágenes y/o técnicas de Machine Learning utilizadas para analizar o evaluar la escritura? \\
 \hline
 
-QQ5 &
+Q5 &
 ¿El estudio describe claramente los indicadores o características de la escritura y/o desempeño grafomotor evaluados? \\
 \hline
 
-QQ6 &
+Q6 &
 ¿El estudio describe claramente el procedimiento utilizado para analizar, clasificar, evaluar o predecir el desempeño de escritura mediante el sistema computacional? \\
 \hline
 
-QQ7 &
+Q7 &
 ¿El estudio describe o identifica adecuadamente el método, instrumento, criterio convencional o referencia utilizada para evaluar el desempeño de escritura, cuando corresponde? \\
 \hline
 
-QQ8 &
+Q8 &
 ¿El estudio presenta claramente sus principales resultados y reconoce las limitaciones metodológicas o condiciones que pueden afectar la interpretación o generalización de sus hallazgos? \\
 \hline
 
-QQ9 &
+Q9 &
 ¿El estudio emplea y describe adecuadamente un procedimiento de validación o evaluación que permita valorar la confiabilidad de los resultados obtenidos? \\
 \hline
 
-QQ10 &
+Q10 &
 ¿El estudio reporta métricas o resultados cuantitativos que permitan valorar el desempeño del sistema o modelo? \\
 \hline
 
@@ -1186,7 +1186,7 @@ síntesis descriptiva y narrativa de la evidencia.
 \section{Resultados y Discusión}
 \label{sec:resultados}
 
-Esta sección presenta los hallazgos obtenidos tras la ejecución del protocolo de revisión, organizados temáticamente para responder a las preguntas de investigación planteadas. Todos los hallazgos cuantitativos presentados a continuación derivan del análisis de los 31 artículos finales incluidos.
+Esta sección presenta los hallazgos obtenidos tras la ejecución del protocolo de revisión, organizados temáticamente para responder a las preguntas de investigación planteadas. Los análisis correspondientes a las preguntas de investigación derivan de los 31 estudios primarios finalmente incluidos, mientras que los análisis bibliométricos exploratorios emplearon los corpus documentales especificados en su respectivo apartado.
 \begingroup
 \small
 \setlength{\tabcolsep}{3pt}
@@ -1653,86 +1653,99 @@ Matrices de confusión de caracteres y diacríticos. Datasets benchmark infantil
 La búsqueda inicial identificó 1361 registros provenientes de Scopus (n=206), Web of Science (n=491) y ScienceDirect (n=664). Antes del cribado, se eliminaron 9 registros duplicados, 1 mediante herramientas de automatización y 843 por otros motivos. Durante la fase de cribado (n=508), se excluyeron 441 registros por no estar relacionados con el tema (EC1) y 2 por no corresponder a la población infantil (EC2). Posteriormente, se evaluaron 65 artículos a texto completo, excluyendo 16 estudios por no utilizar técnicas de ML/CV (EC3) y 6 por carecer de resultados empíricos (EC4). Finalmente, tras la evaluación de calidad de 43 artículos, se excluyeron 12 documentos adicionales, resultando en 31 estudios primarios incluidos en la revisión cuantitativa y cualitativa \cite{page2021prisma}.
 
 \subsection{Análisis Bibliométrico Global}
-El análisis de la producción científica anual demostró un crecimiento exponencial sostenido a partir del periodo 2019-2020, impulsado por el auge del Machine Learning y la digitalización educativa y clínica. Previamente (2008-2018), la producción fue incipiente con menos de 15 artículos por año. El volumen alcanzó un pico máximo proyectado para 2025 con más de 140 artículos (véase la Figura~\ref{fig:annual_prod}).
+El análisis bibliométrico se desarrolló sobre diferentes subconjuntos del corpus documental en función de la compatibilidad de los metadatos requeridos por cada técnica. Los análisis de frecuencia de términos, el diagrama de tres campos, la red de coocurrencia y la red de colaboración se realizaron sobre la fusión de los registros recuperados de Scopus, Web of Science y ScienceDirect antes de la aplicación del proceso de selección PRISMA. En cambio, para el análisis de correspondencias múltiples (MCA), el agrupamiento jerárquico mediante dendrograma y el acoplamiento bibliográfico se empleó el corpus integrado y deduplicado de Scopus y Web of Science, debido a limitaciones de compatibilidad en los metadatos disponibles en la exportación de ScienceDirect para estos procedimientos. Finalmente, el análisis del SCImago Journal Rank (SJR) se efectuó exclusivamente sobre las fuentes correspondientes a los 31 estudios primarios incluidos en la síntesis final. Esta diferenciación se consideró en la interpretación de cada visualización para evitar extrapolar resultados entre corpus con distinta cobertura documental.
 
-\begin{figure}[htbp]
+El análisis bibliométrico se realizó con el propósito de examinar el impacto de las fuentes de publicación y las estructuras conceptual, social e intelectual del campo de estudio. Para ello, se analizaron la frecuencia y coocurrencia de términos, la red de colaboración entre autores, el análisis de correspondencias múltiples, el acoplamiento bibliográfico y el SCImago Journal Rank de las revistas. Estas técnicas permitieron complementar la síntesis sistemática de los estudios incluidos mediante una representación cuantitativa de las principales tendencias y relaciones presentes en la literatura.
+
+\subsubsection{Impacto y prestigio de las fuentes de publicación}
+
+Para caracterizar el impacto de las fuentes que sustentaron la síntesis final, se examinó el SCImago Journal Rank (SJR) de las revistas correspondientes a los 31 estudios primarios incluidos después del proceso de selección y evaluación de calidad. Como se observa en la Figura~\ref{fig:sjr_journals}, existió heterogeneidad en el impacto de las fuentes de publicación. Entre las revistas con mayores valores de SJR destacaron \textit{Computers \& Education: Artificial Intelligence}, \textit{Computers \& Education} y \textit{Journal of Medical Internet Research}. Estos resultados muestran que parte de la evidencia finalmente incluida fue publicada en fuentes con elevada influencia académica. El SJR se consideró exclusivamente como un indicador bibliométrico de la fuente de publicación y no como una medida directa de la calidad metodológica de los estudios individuales.
+
+\begin{figure}[!t]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/annual_production.png}
-    \caption{Producción científica anual bruta.}
-    \label{fig:annual_prod}
+    \includegraphics[width=0.90\textwidth]{images/Journals - SJR.png}
+    \caption{Impacto de las fuentes de publicación de los estudios incluidos según el SCImago Journal Rank (SJR).}
+    \label{fig:sjr_journals}
 \end{figure}
 
-Al analizar las palabras clave mediante un Mapa de Árbol (TreeMap) y una Nube de Palabras, los términos dominantes fueron \textit{machine learning}, \textit{deep learning}, \textit{artificial intelligence}, \textit{human} y \textit{child}. Sin embargo, se evidenció que un 66\% de la muestra en crudo carecía de palabras clave indexadas (\textit{na}) y presentaba dispersión hacia patologías periféricas como dislexia o autismo (véase la Figura~\ref{fig:treemap} y la Figura~\ref{fig:wordcloud}).
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/TreeMap_palabras_claves.png}
-    \caption{Mapa de árbol (TreeMap) de las palabras clave.}
-    \label{fig:treemap}
-\end{figure}
+\subsubsection{Estructura conceptual del campo}
 
-\begin{figure}[htbp]
+La estructura conceptual se examinó inicialmente mediante la frecuencia y coocurrencia de los términos presentes en los registros bibliográficos. La nube de palabras de la Figura~\ref{fig:wordcloud} muestra una marcada presencia de términos como \textit{machine learning}, \textit{deep learning}, \textit{artificial intelligence}, \textit{child} y \textit{handwriting}. Asimismo, aparecen conceptos asociados con \textit{dyslexia}, \textit{character recognition}, \textit{feature extraction} y \textit{convolutional neural networks}. En conjunto, esta distribución evidencia la convergencia entre técnicas computacionales de aprendizaje automático y profundo, el análisis de escritura y su aplicación en poblaciones infantiles.
+
+\begin{figure}[!t]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/WordCloud.png}
-    \caption{Nube de palabras de los términos más frecuentes.}
+    \includegraphics[width=0.70\textwidth]{images/Diagrama de WordCloud.png}
+    \caption{Nube de palabras de los términos más frecuentes en la literatura analizada.}
     \label{fig:wordcloud}
 \end{figure}
 
-El diagrama de Sankey (Gráfico de tres campos) confirmó la trazabilidad temática desde los títulos hacia las palabras clave, demostrando un flujo coherente entre la ingeniería computacional y la evaluación de la escritura infantil, aunque con un alto ruido bibliográfico que justificó la aplicación del protocolo PRISMA (véase la Figura~\ref{fig:sankey}).
 
-\begin{figure}[htbp]
+La red de coocurrencia de términos permitió profundizar en estas relaciones mediante la identificación de comunidades temáticas (Figura~\ref{fig:co_occurrence}). La estructura obtenida muestra un núcleo ampliamente interconectado y varios grupos diferenciados, lo que sugiere que la literatura no constituye una línea temática homogénea. Los clústeres principales articulan conceptos vinculados con inteligencia artificial y aprendizaje automático con términos asociados con escritura, población infantil y dificultades del aprendizaje. A su vez, la existencia de grupos periféricos refleja líneas de investigación más específicas y con menor integración respecto del núcleo principal.
+
+\begin{figure}[!t]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/ThreeFieldPlot.png}
-    \caption{Diagrama de Sankey mostrando la relación entre Títulos, Descriptores y Palabras Clave.}
+    \includegraphics[width=0.78\textwidth]{images/Diagrama Co_occurrenceNetwork.png}
+    \caption{Red de coocurrencia de términos y agrupaciones temáticas identificadas.}
+    \label{fig:co_occurrence}
+\end{figure}
+
+
+El diagrama de tres campos (\textit{Three-Field Plot}) permitió observar las asociaciones entre los términos extraídos de los títulos (TI\_TM), los descriptores indexados (ID) y las palabras clave normalizadas (KW\_Merged). Como se aprecia en la Figura~\ref{fig:sankey}, conceptos como \textit{machine learning}, \textit{deep learning}, \textit{artificial intelligence}, \textit{handwriting} y \textit{child} mantienen múltiples conexiones entre los tres campos. Esta correspondencia muestra que los conceptos centrales identificados no dependen exclusivamente de un único campo bibliográfico, sino que aparecen de manera recurrente en diferentes niveles de descripción de los documentos.
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/Diagrama de Three-Field Plot.png}
+    \caption{Diagrama de tres campos entre términos de título (TI\_TM), descriptores indexados (ID) y palabras clave normalizadas (KW\_Merged).}
     \label{fig:sankey}
 \end{figure}
 
-\subsection{Características de la Población Infantil (RQ1)}
-Para caracterizar a las poblaciones estudiadas, el análisis reveló que la categoría correspondiente a niños saludables dominó la muestra con 17 estudios (54.8\%), lo que reflejó que los modelos computacionales se entrenaron prioritariamente en desarrollo típico. Un grupo amplio (15 estudios, 48.4\%) analizó poblaciones mixtas. Por su parte, el enfoque clínico directo se abordó en 3 estudios enfocados en niños con disgrafía y 2 en estudiantes con dificultades de aprendizaje (véase la Figura~\ref{fig:population}).
 
-\begin{figure}[htbp]
+A partir del corpus integrado y deduplicado de Scopus y Web of Science se examinó la organización jerárquica de los conceptos mediante un dendrograma temático (Figura~\ref{fig:dendrogram}). Las agrupaciones obtenidas muestran distintos niveles de proximidad entre los términos analizados: las uniones producidas a menores distancias representan asociaciones más próximas, mientras que las fusiones a niveles superiores corresponden a agrupaciones conceptualmente más diferenciadas. El análisis muestra la formación de agrupaciones diferenciadas entre términos vinculados con aprendizaje automático, aprendizaje profundo y reconocimiento, y aquellos relacionados con educación, población infantil, diagnóstico y dificultades del aprendizaje.
+
+\begin{figure}[!t]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/RQ1_Poblacion.png}
-    \caption{Frecuencia de la condición de la población evaluada.}
-    \label{fig:population}
+    \includegraphics[width=0.90\textwidth]{images/Diagrama de Dendrograma Temático.png}
+    \caption{Dendrograma de agrupamiento jerárquico de los principales términos del corpus.}
+    \label{fig:dendrogram}
 \end{figure}
 
-\subsection{Tecnologías de Captura y Algoritmos de Machine Learning (RQ2)}
-En la dimensión de dispositivos de captura, existió un predominio de tecnologías dinámicas (53.1\%), agrupando tabletas digitales y lápices inteligentes para la captura \textit{online}. La captura estática (\textit{offline}) mediante imágenes digitales representó el 28.1\%. Los medios ópticos como cámaras (9.4\%) y video (6.2\%) se emplearon para la visión computacional en tiempo real (véase la Figura~\ref{fig:tech}).
 
-\begin{figure}[htbp]
+Sobre el mismo corpus integrado y deduplicado de Scopus y Web of Science, la estructura conceptual fue examinada adicionalmente mediante un análisis de correspondencias múltiples (MCA), representado en la Figura~\ref{fig:mca_map}. La proximidad espacial entre términos permite identificar asociaciones conceptuales dentro de este subconjunto documental. Se observa un grupo relacionado con \textit{deep learning}, \textit{dysgraphia}, \textit{character recognition}, \textit{learning algorithms} y \textit{learning disabilities}, mientras que otros grupos concentran términos asociados con diagnóstico y desempeño, educación y dislexia, o características poblacionales. Por otra parte, conceptos relacionados con redes neuronales convolucionales aparecen como una agrupación diferenciada. Esta distribución evidencia la coexistencia de distintos subdominios tecnológicos, educativos y clínicos dentro de la literatura analizada.
+
+\begin{figure}[!t]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/RQ2_Tecnologia_Donut.png}
-    \caption{Distribución de tecnología y dispositivos de captura.}
-    \label{fig:tech}
+    \includegraphics[width=0.90\textwidth]{images/Diagrama de Mapa Factorial.png}
+    \caption{Mapa de estructura conceptual obtenido mediante análisis de correspondencias múltiples (MCA).}
+    \label{fig:mca_map}
 \end{figure}
 
-Respecto a los modelos computacionales, las Redes Neuronales Convolucionales (CNN) se consolidaron como la arquitectura estándar para el procesamiento de imágenes estáticas (10 estudios). En aprendizaje automático tradicional para datos dinámicos, \textit{Random Forest} (n=6) y SVM (n=5) fueron los más adoptados. Los modelos de series temporales (LSTM y RNN) acumularon 5 implementaciones para procesar trazos secuenciales (véase la Figura~\ref{fig:algorithms}).
 
-\begin{figure}[htbp]
+\subsubsection{Estructura de colaboración científica}
+
+La red de colaboración entre autores permitió examinar la estructura social de la producción científica (Figura~\ref{fig:collaboration}). La visualización evidencia la presencia de varios clústeres de colaboración, con grupos internamente densos y distintos niveles de conexión entre comunidades. Los conglomerados de mayor tamaño presentan múltiples vínculos entre sus integrantes, mientras que algunos grupos periféricos mantienen una participación comparativamente aislada. Esta configuración sugiere que el desarrollo del campo se encuentra distribuido entre diferentes equipos científicos y que la colaboración entre determinados grupos todavía es limitada.
+
+\begin{figure}[!t]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/RQ2_Algoritmos_ML_DL.png}
-    \caption{Frecuencia de algoritmos y técnicas de Inteligencia Artificial.}
-    \label{fig:algorithms}
+    \includegraphics[width=0.78\textwidth]{images/Diagrama Collaboration_Network.png}
+    \caption{Red de colaboración científica entre autores del corpus bibliográfico.}
+    \label{fig:collaboration}
 \end{figure}
 
-\subsection{Métodos de Referencia e Indicadores Grafomotores (RQ3 y RQ4)}
-Para establecer la validez de los sistemas (RQ3), el método de referencia principal fue el \textit{ground truth} o etiquetado humano directo (16 estudios). Adicionalmente, una proporción significativa comparó el algoritmo contra instrumentos de alto valor clínico: pruebas estandarizadas (n=8) y evaluación experta (n=8). Los diagnósticos previos (n=3) y valoraciones docentes (n=3) tuvieron una participación menor (véase la Figura~\ref{fig:eval_methods}).
 
-\begin{figure}[htbp]
+\subsubsection{Estructura intelectual mediante acoplamiento bibliográfico}
+
+Finalmente, sobre el corpus integrado y deduplicado de Scopus y Web of Science se aplicó el acoplamiento bibliográfico para examinar la proximidad intelectual entre los documentos a partir de las referencias que comparten. Esta técnica permitió identificar agrupaciones de estudios sustentadas en bases bibliográficas similares.
+
+La utilización de este subconjunto respondió a los requerimientos de metadatos de estos procedimientos bibliométricos. En particular, el acoplamiento bibliográfico requiere información de referencias citadas para establecer los vínculos entre documentos. La exportación de ScienceDirect utilizada durante la integración no proporcionó estos metadatos con la compatibilidad requerida, por lo que sus registros no fueron incorporados en este análisis específico. En consecuencia, los clústeres obtenidos deben interpretarse como la estructura intelectual identificada en el corpus integrado y deduplicado de Scopus y Web of Science, y no como una representación exhaustiva de los registros recuperados de las tres bases.
+
+Como se observa en la Figura~\ref{fig:clustering_map}, los documentos se distribuyeron en agrupaciones con diferentes niveles de centralidad e impacto. Entre las temáticas representadas se identifican grupos asociados con \textit{deep learning}, sistemas de aprendizaje y disgrafía, así como otros vinculados con clasificación, población infantil y variables clínicas. La distribución obtenida evidencia que el campo integra diversas líneas de investigación con distintos grados de consolidación y conexión con el núcleo de la literatura.
+
+\begin{figure}[!t]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/RQ3_Metodos_Referencia.png}
-    \caption{Frecuencia de métodos de evaluación convencionales y de referencia.}
-    \label{fig:eval_methods}
-\end{figure}
-
-En cuanto a las métricas grafomotoras (RQ4), se observó una alta heterogeneidad (21 estudios analizaron variables misceláneas como inclinación o pausas). En los indicadores estáticos, las características geométricas del trazo dominaron (n=18), seguidas por la calidad de escritura (n=8) y legibilidad (n=6). Los indicadores cinemáticos (\textit{online}) más evaluados fueron la velocidad (n=9), la precisión del trazo (n=7) y la fluidez (n=6), evidenciando que la IA permite cuantificar variables dinámicas invisibles al evaluador humano (véase la Figura~\ref{fig:indicators}).
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/RQ4_Indicadores_Grafomotores.png}
-    \caption{Ranking de indicadores grafomotores y características evaluadas.}
-    \label{fig:indicators}
+    \includegraphics[width=0.90\textwidth]{images/Diagrama Clusters Documental.png}
+    \caption{Clústeres documentales obtenidos mediante acoplamiento bibliográfico a partir del corpus integrado y deduplicado de Scopus y Web of Science.}
+    \label{fig:clustering_map}
 \end{figure}
 
 \subsection{Discusión}
