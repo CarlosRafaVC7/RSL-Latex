@@ -2,7 +2,7 @@
     "latex-workshop.latex.tools": [
         {
             "name": "pdflatex",
-            "command": "C:\\\\Users\\\\matia\\\\AppData\\\\Local\\\\Programs\\\\MiKTeX\\\\miktex\\\\bin\\\\x64\\\\pdflatex.exe",
+            "command": "pdflatex",
             "args": [
                 "-synctex=1",
                 "-interaction=nonstopmode",
@@ -13,7 +13,7 @@
         },
         {
             "name": "bibtex",
-            "command": "C:\\\\Users\\\\matia\\\\AppData\\\\Local\\\\Programs\\\\MiKTeX\\\\miktex\\\\bin\\\\x64\\\\bibtex.exe",
+            "command": "bibtex",
             "args": [
                 "%DOCFILE%"
             ],
@@ -46,6 +46,7 @@
             ]
         }
     ],
+    "latex-workshop.latex.recipe.default": "pdflatex -> bibtex -> pdflatex x2",
     "latex-workshop.latex.autoBuild.run": "onFileChange",
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.synctex.afterBuild.enabled": true,
